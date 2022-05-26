@@ -1,0 +1,347 @@
+/* importe do google fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+/* NAVBAR */
+.navbar {
+    background-color: #fff;
+    padding-top: 20px;
+}
+
+.navbar .nav-item .nav-link {
+    color: #FF8827;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: rgb(35, 32, 32);
+}
+
+.navbar-nav {
+    margin-left: 150px;
+}
+
+.nav-item {
+    margin-left: 50px;
+}
+
+i {
+    color: #FF8827;
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+i:hover {
+    color: rgb(35, 32, 32);
+}
+
+.icones {
+    margin-right: 50px;
+}
+
+/*CARROSSEL*/
+
+.carousel-inner {
+    margin-top: 80px;
+}
+
+/*SECTION - APP */
+
+.app_Section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.app_preview {
+    background-color: #FF8827;
+    height: 500px;
+    border-radius: 15px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao_app {
+    color: white;
+}
+
+.descricao_app p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.descricao_app h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.imagem_baixar {
+    margin-top: 20px;
+}
+
+/* PRODUTOS - FEIRAQUI */
+
+.produtos_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos {
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 95%;
+}
+
+.explorar a {
+    text-align: end;
+    color: #5FB800 !important;
+    text-decoration: none;
+}
+
+.categorias {
+    margin-top: 30px;
+}
+
+
+.item-categoria {
+    margin: 20px;
+    text-align: center;
+}
+
+.item-categoria a {
+    color: black;
+    text-decoration: none;
+}
+
+.item-categoria:hover {
+    transform: scale(1.1);
+}
+
+.itens_categorias {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/*OFERTAS*/
+
+.ofertas {
+    margin-top: 50px;
+}
+
+.itens-produtos {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.item-produto {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10.7168px 10.7168px 21.4335px rgba(182, 182, 182, 0.3);
+    border-radius: 6px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.item-produto:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    background-color: #FF8827;
+    width: 80%;
+    height: 30px;
+    color: white;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+a .button {
+    text-decoration: none;
+}
+
+span {
+    font-size: 10px;
+    text-decoration: line-through;
+    color: red;
+}
+
+.nome-produto {
+    font-weight: bold;
+}
+
+.quantidade {
+    font-size: 10px;
+}
+
+/*FEIRAS PRÓXIMAS*/
+
+.section_feiras {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.feirasproximas {
+    background-color: #fff;
+    border: 1px solid #FF8827;
+    border-radius: 15px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 500px
+}
+
+.mapa {
+    border-radius: 15px;
+    margin-left: 100px;
+}
+
+.add-cep {
+    margin-left: 200px;
+    transform: scale(1.2);
+}
+
+.titulo-feira {
+    color: #FF8827;
+}
+
+.input-group i {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+div .input-group-text {
+    background-color: #FF8827;
+
+}
+
+/*SOBRE NÓS*/
+
+.section_sobre {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre_nos {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre_nos_titulo {
+    color: #FF8827;
+    margin-top: 20px;
+    width: 1220px;
+    height: 120px;
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-v{
+    border: 1px solid #FF8827;
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.imagem-v{
+    background-color: #FF8827;
+    border-radius: 20px;
+}
+
+.imagem-v img{
+    transform: scale(0.5);
+}
+
+.imagem_logo{
+    width: 200px;
+    margin-top: 50px;
+}
+
+.texto-v{
+    margin-left: 30px;
+}
+
+.texto-v h4{
+    color: #FF8827;
+    text-align: center;
+}
+
+.footer{
+    background-color: #FF8827;
+    margin-top: 50px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.logo-branco{
+    height: 30px;
+    width: 120px;
+    margin-top: 20px;
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+}
+
+.linkedin-contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.footer .contatos.linkedin-contato.coluna .bi .bi-linkedin i{
+    color: #fff;
+}
