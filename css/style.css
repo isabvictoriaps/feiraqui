@@ -1,11 +1,18 @@
 /* importe do google fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+/* BODY */
+
+.body {
+    background: #fff;
+}
 
 /* NAVBAR */
+
 .navbar {
     background-color: #fff;
     padding-top: 20px;
+    border-bottom: #FF8827 2px solid;
 }
 
 .navbar .nav-item .nav-link {
@@ -14,7 +21,7 @@
 }
 
 .navbar .nav-item .nav-link:hover {
-    color: rgb(35, 32, 32);
+    text-decoration: underline;
 }
 
 .navbar-nav {
@@ -32,17 +39,73 @@ i {
 }
 
 i:hover {
-    color: rgb(35, 32, 32);
+    color: #d3a65e;
 }
 
 .icones {
     margin-right: 50px;
 }
 
+.navbar-brand img {
+    transform: scale(0.8);
+}
+
+.botaoicon {
+    border: none !important;
+    background-color: transparent;
+}
+
+.search-form {
+    position: absolute;
+    top: 108%;
+    right: 0%;
+    background: #fff;
+    width: 380px;
+    height: 50px;
+    border: 2px solid #FF8827;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.search-form.active {
+    transform: scaleY(1);
+}
+
+.search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    text-transform: none;
+}
+
+.search-form input::placeholder {
+    color: #FF8827;
+    font-size: 20px;
+}
+
+.search-form label {
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px;
+    color: #FF8827;
+}
+
 /*CARROSSEL*/
 
 .carousel-inner {
     margin-top: 80px;
+}
+
+.carousel-indicators button {
+    background-color: #FF8827 !important;
+    margin-left: 40px !important;
+    transform: scale(1.8);
 }
 
 /*SECTION - APP */
@@ -167,6 +230,7 @@ i:hover {
     color: white;
     border-radius: 9px;
     text-decoration: none;
+    border: none;
 }
 
 .button:hover {
@@ -177,7 +241,7 @@ a .button {
     text-decoration: none;
 }
 
-span {
+p span {
     font-size: 10px;
     text-decoration: line-through;
     color: red;
@@ -270,78 +334,1011 @@ div .input-group-text {
     align-items: center;
 }
 
-.sobre-v{
+.sobre-feiraqui {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-v {
     border: 1px solid #FF8827;
     border-radius: 20px;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     padding: 20px;
+    width: 1000px;
+    margin-bottom: 40px;
 }
 
-.imagem-v{
+.imagem-v {
     background-color: #FF8827;
     border-radius: 20px;
 }
 
-.imagem-v img{
+.imagem-v img {
     transform: scale(0.5);
 }
 
-.imagem_logo{
-    width: 200px;
+.imagem_logo {
+    width: 150px;
     margin-top: 50px;
 }
 
-.texto-v{
+.texto-v {
     margin-left: 30px;
 }
 
-.texto-v h4{
+.texto-v h4 {
+    color: #FF8827;
+}
+
+.footer {
+    background-color: #FF8827;
+    margin-top: 50px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-info {
+    color: #fff;
+    font-size: small;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-info button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+/*MODAL*/
+
+.modal-body {
+    display: flex;
+}
+
+.modal-body img {
+    transform: scale(0.5);
+}
+
+/* PÁGINA - LOGIN */
+
+.login_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.login_info {
+    border: 1px solid #000;
+    padding: 30px 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+
+.titulo_login {
+    color: #FF8827;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_emailsenha {
+    background: rgba(196, 196, 196, 0.29);
+    border-radius: 20px;
+    border: transparent 1px solid;
+    margin-top: 15px;
+    height: 40px;
+}
+
+.input_emailsenha::placeholder {
+    padding: 20px;
+}
+
+.infosenha {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.botao_entrar {
+    background-color: #FF8827;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.divbotao_entrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcao_gouf {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcao_gouf a {
+    color: #000;
+    text-decoration: none;
+    margin: 5px;
+    font-size: 15px;
+}
+
+.entrar_opcao {
+    border: 1px solid;
+    border-radius: 10px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 2px;
+}
+
+.entrar_opcao h6 {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.entrar_opcao img {
+    width: 20px;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+}
+
+.cadastro a {
+    color: #FF8827;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.imagem_login img {
+    margin-left: 50px;
+    height: 600px;
+}
+
+.ou_linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.linha-horizontal {
+    width: 150px;
+    border: 1px solid rgb(35, 34, 34);
+    background-color: rgb(41, 39, 39);
+}
+
+/*TELA DE CADASTRO*/
+.cadastrarComo {
+    margin-top: 200px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF8827;
+}
+
+.tituloCadastrarComo {
+    margin-right: 500px;
+}
+
+.categoriasCadastro {
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    width: 900px;
+    margin-bottom: 50px;
+}
+
+.cadastrar {
+    background-color: #F2F2F2;
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    box-shadow: 10.7168px 10.7168px 21.4335px rgba(182, 182, 182, 0.3);
+    border-radius: 10px;
+}
+
+.cadastrar:hover {
+    transform: scale(1.1);
+}
+
+.cadastrar img {
+    transform: scale(0.6);
+}
+
+.cadastrar a {
+    text-decoration: none;
     color: #FF8827;
     text-align: center;
 }
 
-.footer{
-    background-color: #FF8827;
-    margin-top: 50px;
-    height: 350px;
+.cadastrar a:hover {
+    color: #FF8827;
+}
+
+/*CADASTRO FREGUES*/
+
+.bemvindoFregues {
+    margin-top: 130px;
+    margin-left: 20%;
+    margin-bottom: 40px;
+}
+
+.informacoes {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF8827;
+}
+
+.inputsCadastro {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inputsdoCadastro {
+    width: 500px;
+    height: 40px;
+    border: none;
+    margin: 30px 30px 0 0;
+    background: #EEEEEE;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.botaoCadastro {
+    border: none;
+    background-color: #FF8827;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.termosCadastro {
+    display: flex;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.termosCadastro label {
+    margin-left: 20px;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.fazerLogin {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.logos{
+.fazerLogin a {
+    text-decoration: none;
+    color: #FF8827;
+    margin-top: -18px;
+    margin-left: 10px;
+}
+
+.ou_linhaCadastro {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.linha-horizontalCadastro {
+    width: 500px;
+    border: 1px solid rgb(35, 34, 34);
+    background-color: rgb(41, 39, 39);
+}
+
+/*TELA DE CADASTRO - ENTREGADOR*/
+
+.codigoSeguranca {
+    border: 2px solid #FF8827;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    margin-top: 50px;
+    width: 600px;
+    padding: 30px 20px;
+}
+
+.codigoSeguranca input {
+    border-radius: 10px;
+    border: 1px solid #FF8827;
+    width: 200px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.codigoSeguranca input::placeholder {
+    padding: 15px;
+}
+
+.codigoSeguranca a {
+    color: #FF8827;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+
+.codigoSeguranca h4 {
+    color: #FF8827;
+    margin-bottom: 20px;
+}
+
+.formasEntrega {
+    color: rgba(0, 0, 0, 0.54);
+    display: flex;
+}
+
+.entregaItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.8);
+}
+
+
+.entregaItem p {
+    font-size: 25px;
+}
+
+.entregaItem:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+.documentos {
+    display: flex;
+}
+
+.quadradoDocumentos {
+    width: 220px;
+    height: 250px;
+    border: 2.5px solid #FF8827;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.quadradoDocumentos img {
+    transform: scale(0.8);
+}
+
+.quadradoDocumentos img:hover {
+    transform: scale(1);
+    cursor: pointer;
+}
+
+form h5 {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.sectionCNH {
+    color: #000;
+    text-align: center;
+}
+
+.sectionCNH h4 {
+    color: #FF8827;
+    margin: 40px 0 30px 0;
+    text-align: centera;
+}
+
+.quadradoCNH {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 50px;
+}
+
+.quadradoCNH h5 {
+    color: #000000;
+    margin-top: 10px;
+}
+
+.quadradoCNH a {
+    color: #FF8827;
+    text-decoration: none;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.informacoesBancarias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF8827;
+}
+
+/*PAINEL ADM*/
+.SectionPainelAdm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.containerPainelAdm {
+    background-color: #FF8827;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px #FF8827;
+    overflow: hidden;
+    width: 700px;
+    max-width: 100%;
+}
+
+.header {
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 20px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.formPainel {
+    padding: 30px 40px;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control2 input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.formPainel button {
+    background-color: #5FB800;
+    border: 2px solid #5FB800;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: sans-serif bold;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#quantidadeNmr {
+    width: 30%;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.labelArquivo {
+    background-color: #5FB800;
+    border: 2px solid #5FB800;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: sans-serif bold;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.quantidadeFrutas {
+    display: flex;
+}
+
+#quantidade {
+    border-radius: 5px;
+    margin-left: 20px;
+    border: 1px solid rgb(208, 208, 208);
+}
+
+/* SOBRE NÓS */
+.sectionSobreNos {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quadrado-sobreNos {
+    display: flex;
+    flex-direction: row;
+}
+
+.textoSobre-nos {
+    background-color: #FF8827;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+.imgSobre-nos img {
+    width: 400px;
+    height: 400px;
+
+}
+
+.imgSobre-nos img:hover {
+    transform: rotate(5deg);
+}
+
+
+/*CONTATO*/
+.contato {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.entreEmContato {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 80px;
 }
 
-.logo-branco{
-    height: 30px;
-    width: 120px;
-    margin-top: 20px;
+.entreEmContato iframe {
+    margin-bottom: 50px;
 }
 
-.contatos{
+.entreEmContato h3 {
+    color: #FF8827;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.formContato {
+    background-color: #fff;
+    width: 1000px;
+    border: 2px #FF8827 solid;
+    border-radius: 10px;
+}
+
+.inputContato {
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
+    padding: 20px;
 }
 
-.linkedin-contato{
+.inputContato input {
+    width: 800px;
+    height: 50px;
+    border: 1px solid #848383;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.inputContato label {
+    font-size: 23px;
+    color: #848383;
+}
+
+.formContato button {
+    background-color: #5FB800;
+    border: 2px solid #5FB800;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: sans-serif bold;
+    font-size: 16px;
+    padding: 10px;
+    width: 80%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#mensagemContato {
+    height: 200px;
+    display: flex;
+}
+
+.localizacao {
+    margin-top: 40px;
+}
+
+.nomeCompletoContato {
+    margin-top: 30px;
+}
+
+/*CAARRINHO*/
+.carrinhoFregues {
+    margin-top: 80px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.1px solid #a4a4a4;
+    position: absolute;
+    border-radius: 20px;
+    top: 0%;
+    right: 1%;
+    background-color: #fff;
+    transform: scaleY(0);
+}
+
+
+.carrinhoFregues.active{
+    transform: scaleY(1);
+}
+
+
+.carrinhoFregues h4 {
+    color: #FF8827;
+    font-size: 30px;
+    border-top: 0px solid;
+    border-bottom: #FF8827 solid 3px;
+    width: 350px;
+    height: 50px;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    font-weight: bold;
+}
+
+.produtoCarrinho {
+    color: red;
+}
+
+.precoFrutaCarrinho{
+    margin-top: -15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.contadorBotao {
+    background-color: #5FB800;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-weight: bolder;
+    margin: 0px 10px;
+}
+
+.itemCarrinho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+}
+
+.totalCarrinho {
+    border: 1px solid #FF8827;
+    width: 350px;
+    text-align: center;
+    margin: 50px;
+    font-weight: bolder;
+}
+
+.finalizarPedido {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 35px;
+    margin-bottom: 50px;
+}
+
+.circulo1 img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    transform: rotate('90deg');
+}
+
+.circulo2 img{
+    position: absolute;
+    width: 200px;
+    bottom: 0px;
+    right: 10px;
+    transform: rotate('90deg');
+}
+
+.itemCarrinho .imagem img {
+    width: 80px;
+    margin: 0px 10px 0px 0px;
+}
+
+.itemCarrinho .imagem {
+    margin-left: 30px;
+}
+
+.contador {
     display: flex;
     flex-direction: row;
-    justify-content: start;
 }
 
-.coluna{
+/*FINALIZANDO PEDIDO*/
+.finalizar-pedido{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.divFinalizar-pedido h4{
+    color: #000000;
+    text-align: center;
+    margin: 30px;
+}
+
+.pagamentoPix{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    font-size: 15px;
+}
+
+.pagamentoPix img{
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.linhaVertical{
+    width: 0px;
+    border: 0.5px solid #fff;
+    height: 600px;
+    margin: 0px 50px 0px 50px;
+}
+
+.divFinalizar-pedido form{
+    background-color: #FF8827;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    height: 700px;
+    padding: 20px;
+}
+
+.divFinalizar-pedido form button{
+    background-color: #5FB800;
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 420px;
+    border-radius: 5px;
+    margin: 20px 0px 40px 0px;
+}
+
+.pagamentoCartao img{
+    width: 350px;
+    margin-top: 50px;
+}
+
+.pagamentoCartao{
+    margin: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer .contatos.linkedin-contato.coluna .bi .bi-linkedin i{
+.valorTotal{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.inputPagamento{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.inputPagamento input{
+    width: 420px;
+    border: none;
+    height: 40px;
+}
+
+.validade-cvv{
+    display: flex;
+}
+
+.validade-cvv input{
+    width: 200px;
+}
+
+/*PERFIL FREGUES*/
+.perfilFregues{
+    position: absolute;
+    background-color: #fff;
+    width: 350px;
+    right: 2%;
+    top: 70px;
+    border-radius: 0px 0px 20px 20px;
+    transform: scaleY(0);
+}
+
+.perfilFregues.active{
+    transform: scaleY(1);
+}
+
+.img-fregues img{
+    width: 100px;
+    height: 100px;
+    border-radius: 360px;
+}
+
+.div-perfil{
+    display: flex;
+    background-color: #FF8827;
+    justify-content: center;
+    align-items: center;
     color: #fff;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.informacoes-fregues{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-align:start;
+    justify-content: start;
+    padding: 30px;
+}
+
+.informacoes-fregues p{
+    margin-top: -5px;
+    text-align: start;
+}
+
+.informacoes-fregues p i{
+    color: #fff;
+    font-size: 15px;
+    margin-right: 11px;
+    margin-left: 0px;
+}
+
+.links-perfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.links-perfil a{
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+
+.links-perfil i{
+    margin-right: 30px;
+    font-size: 30px;
 }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--HEAD-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="feira, delivery, demoday">
+    <meta name="description" content="Site do projeto FeirAqui">
+    <!-- Bootstrap e icones -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8b7c10c663.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="img/logomarca_feiraqui.png" type="image/x-icon">
+    <title>FeirAqui - O MELHOR DELIVERY DE FEIRAS</title>
+</head>
+
+<body class="bg-light">
+
+    <!--LIBRAS-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/Logo_feiraqui.png" alt="Logomarca laranja do feira aqui"></a>
+            <div class="collapse navbar-collapse itens-nav row">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#inicio">INÍCIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">PRODUTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feiras">FEIRAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icones">
+                <button class="botaoicon"><i class="bi bi-search"></i></button>
+                <button class="botaoicon"><i class="bi bi-basket2-fill"></i></button>
+                <button class="botaoicon"><i class="fa-solid fa-circle-user"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!--LOGIN-->
+    <div class="SectionPainelAdm">
+        <div class="containerPainelAdm">
+            <div class="header">
+                <h2>Painel - Feirante</h2>
+            </div>
+
+            <form id="formPainel" class="formPainel">
+                <div>
+                    <label class="labelArquivo" for="arquivo">Upload da imagem do produto</label>
+                    <input type="file" name="arquivo" id="arquivo">
+                </div>
+
+                <div class="form-control">
+                    <label for="username">Categoria:</label>
+                    <input type="text" placeholder="Exemplo: Fruta" />
+                </div>
+                <div class="form-control">
+                    <label for="username">Nome do produto:</label>
+                    <input type="text" placeholder="Exemplo: Maça" />
+                </div>
+                <div class="form-control">
+                    <label for="username">Preço (R$):</label>
+                    <input type="number" placeholder="Exemplo: R$ 5,00" />
+                </div>
+                <div class="form-control">
+                    <label for="Quantidade">Quantidade:</label>
+                    <div class="quantidadeFrutas">
+                        <input type="number" name="quantidadeNmr" id="quantidadeNmr" placeholder="Exemplo: 1 dúzia">
+                        <select name="quantidade" id="quantidade">
+                            <option value="opcao">Opção</option>
+                            <option value="kg">kG</option>
+                            <option value="ml">mL</option>
+                            <option value="ml">gramas</option>
+                            <option value="unidade">Unidade</option>
+                            <option value="pe">Pé</option>
+                            <option value="duzia">Dúzia</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="username">Descrição:</label>
+                    <input type="text" placeholder="Descreva seu produto.." />
+                </div>
+                <button>Adicionar Produto</button>
+            </form>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="icones-redes">
+            <i class="bi bi-linkedin" style="color: white;"></i>
+            <i class="bi bi-github" style="color: white;"></i>
+            <i class="bi bi-instagram" style="color: white ;"></i>
+            <i class="bi bi-facebook" style="color: white;"></i>
+            <i class="fa-brands fa-figma" style="color: white;"></i>
+        </div>
+        <div class="footer-info">
+            <p>© Copyright FEIRAQUI | Todos os direitos reservados | <a>Política de Privacidade</a> | </a>Formas de
+                Pagamentos</a></p>
+            <p>(Carlos - Christian - Gabriel Leão - Isabelle Victoria - Lucas Lira - Lucas Santiago - Murilo - Raphael |
+                INSTITUTO PROA 2022 - EQUIPE 2)</p>
+        </div>
+    </div>
+</body>
+
+</html>

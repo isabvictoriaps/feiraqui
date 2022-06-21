@@ -20,7 +20,6 @@
 </head>
 
 <body class="bg-light">
-
   <!--LIBRAS-->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
@@ -32,16 +31,14 @@
   <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
-
   <!--NAVBAR-->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img src="img/Logo_feiraqui.png"
-          alt="Logomarca laranja do feira aqui"></a>
+      <a class="navbar-brand" href="#"><img src="img/Logo_feiraqui.png" alt="Logomarca laranja do feira aqui"></a>
       <div class="collapse navbar-collapse itens-nav row">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " href="index.html">INÍCIO</a>
+            <a class="nav-link " href="#inicio">INÍCIO</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#produtos">PRODUTOS</a>
@@ -50,31 +47,104 @@
             <a class="nav-link" href="#feiras">FEIRAS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sobreNos.html">SOBRE NÓS</a>
+            <a class="nav-link" href="#sobre">SOBRE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contato.html">CONTATO</a>
+            <a class="nav-link" href="#contato">CONTATO</a>
           </li>
         </ul>
       </div>
       <div class="icones">
-        <div class="dropdown">
-          <button class="botaoicon" id="search-btn"><i class="bi bi-search"></i></button>
+        <button class="botaoicon" id="search-btn"><i class="bi bi-search"></i></button>
 
-          <a href="login.html"><button class="botaoicon"><i class="bi bi-basket2-fill"></i></button></a>
-          
-          <button class="botaoicon dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-            aria-expanded="false"><i class=" fa-solid fa-circle-user"></i></button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="login.html">Entre</a></li>
-            <li><a class="dropdown-item" href="cadastro.html">Cadastre-se</a></li>
-          </ul>
-        </div>
+        <button class="botaoicon" id="botaoCarrinho"><i class="bi bi-basket2-fill"></i></button>
+
+        <button class="botaoicon" id="botao-perfil"><i class=" fa-solid fa-circle-user"></i></button>
       </div>
       <div class="search-form">
         <input type="search" id="search-box" placeholder="pesquise aqui...">
         <label for="search-box" class="fas fa-search"></label>
       </div>
+    </div>
+
+    <!--CARRINHO FREGUES-->
+    <div class="carrinhoFregues">
+      <h4>Carrinho</h4>
+      <hr>
+      <div class="itemCarrinho">
+        <div class="imagem">
+          <img src="img/image 1-2.png" alt="">
+        </div>
+        <div>
+          <p class="produtoCarrinho">Banana</p>
+          <p class="precoFrutaCarrinho">R$ 3.99 <br>
+            Dúzia</p>
+        </div>
+        <div class="contador">
+          <p class="contadorBotao">-</p>
+          <p>1</p>
+          <p class="contadorBotao">+</p>
+        </div>
+      </div>
+      <div class="itemCarrinho">
+        <div class="imagem">
+          <img src="img/image 1.png" alt="">
+        </div>
+        <div>
+          <p class="produtoCarrinho">Banana</p>
+          <p class="precoFrutaCarrinho">R$ 3.99 <br>
+            Dúzia</p>
+        </div>
+        <div class="contador">
+          <p class="contadorBotao botaoMenos">-</p>
+          <p>1</p>
+          <p class="contadorBotao botaoMais">+</p>
+        </div>
+      </div>
+      <div class="itemCarrinho">
+        <div class="imagem">
+          <img src="img/image 1.png" alt="">
+        </div>
+        <div>
+          <p class="produtoCarrinho">Banana</p>
+          <p class="precoFrutaCarrinho">R$ 3.99 <br>
+            Dúzia</p>
+        </div>
+        <div class="contador">
+          <p class="contadorBotao">-</p>
+          <p>1</p>
+          <p class="contadorBotao">+</p>
+        </div>
+      </div>
+      <p class="totalCarrinho">TOTAL: 20,00</p>
+      <div class="circulo1">
+        <img src="img/Ellipse 15.png" alt="">
+      </div>
+      <div class="circulo2">
+        <img src="img/Ellipse 16.png" alt="">
+      </div>
+      <button class="finalizarPedido">Finalizar pedido</button>
+    </div>
+
+    <div class="perfilFregues">
+      <div class="div-perfil">
+        <div class="img-fregues">
+          <img src="img/perfil-fregues.jpg" alt="">
+        </div>
+        <div class="informacoes-fregues">
+          <h6>Heleno Barreto</h6>
+          <p>Freguês</p>
+          <p><i class="bi bi-star"></i>4.9</p>
+        </div>
+      </div>
+      <div class="links-perfil">
+        <a href=""><i class="bi bi-list-ul"></i> Categorias</a>
+        <a href="meuPerfilFregues.html"><i class="bi bi-person-circle"></i>Meu perfil</a>
+        <a href=""><i class="bi bi-bicycle"></i>Painel entregador</a>
+        <a href=""><i class="bi bi-shop"></i>Painel feirante</a>
+        <a href="index.html"><i class="bi bi-box-arrow-right"></i>Sair</a>
+      </div>
+    </div>
   </nav>
 
   <!--CARROSSEL-->
@@ -113,21 +183,6 @@
     </div>
   </div>
 
-  <!--SECTION - DIVULGAÇÃO APP-->
-  <div class="app_Section">
-    <div class="app_preview">
-      <div>
-        <img src="img/app.png" alt="">
-      </div>
-      <div class="descricao_app">
-        <p>VEM AÍ O <b> MELHOR </b> APLICATIVO DE FEIRA <br> QUE VOCÊ JÁ VIU!</p>
-        <br>
-        <h2>EM BREVE!</h2>
-        <br>
-        <img src="img/baixar_app.png" class="imagem_baixar" alt="">
-      </div>
-    </div>
-  </div>
 
   <!--PRODUTOS - FEIRAQUI-->
   <div class="produtos_section" id="produtos">
@@ -212,42 +267,42 @@
             <p class="nome-produto">Banana</p>
             <p class="quantidade">Dúzia</p>
             <p> <span>R$6,00</span> R$ 3,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <button class="button">Adicionar</button>
           </div>
           <div class="item-produto">
             <img src="img/image 1-1.png" alt="">
             <p class="nome-produto">Abacaxi</p>
             <p class="quantidade">Unidade</p>
-            <p> <span>R$6,00</span> R$ 3,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <p> <span>R$6,00</span> R$ 4,99</p>
+            <button class="button">Adicionar</button>
           </div>
           <div class="item-produto">
             <img src="img/image 1-2.png" alt="">
             <p class="nome-produto">Maçã</p>
             <p class="quantidade">1 Kg</p>
-            <p> <span>R$6,00</span> R$ 3,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <p> <span>R$5,99</span> R$ 3,99</p>
+            <button class="button">Adicionar</button>
           </div>
           <div class="item-produto">
             <img src="img/image 1-3.png" alt="">
             <p class="nome-produto">Alface</p>
             <p class="quantidade">Pé</p>
-            <p> <span>R$6,00</span> R$ 3,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <p> <span>R$6,00</span> R$ 2,99</p>
+            <button class="button">Adicionar</button>
           </div>
           <div class="item-produto">
             <img src="img/image 1-4.png" alt="">
             <p class="nome-produto">Morango</p>
             <p class="quantidade">Bandeija com aprox. 250g</p>
             <p> <span>R$11,99</span> R$ 8,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <button class="button">Adicionar</button>
           </div>
           <div class="item-produto">
             <img src="img/image 1-4.png" alt="">
             <p class="nome-produto">Banana</p>
             <p class="quantidade">Dúzia</p>
             <p> <span>R$6,00</span> R$ 3,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <button class="button">Adicionar</button>
           </div>
         </div>
       </div>
@@ -271,42 +326,42 @@
             <p class="nome-produto">Peixe</p>
             <p class="quantidade">Kg</p>
             <p> R$ 3,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <button class="button">Adicionar</button>
           </div>
           <div class="item-produto">
             <img src="img/pastel.png" alt="">
             <p class="nome-produto">Pastel</p>
             <p class="quantidade">Unidade</p>
             <p>R$ 3,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <button class="button">Adicionar</button>
           </div>
           <div class="item-produto">
             <img src="img/melancia.png" alt="">
             <p class="nome-produto">Melancia</p>
             <p class="quantidade">Unidade</p>
             <p>R$ 3,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <button class="button">Adicionar</button>
           </div>
           <div class="item-produto">
             <img src="img/banana.png" alt="">
             <p class="nome-produto">Banana</p>
             <p class="quantidade"> Dúzia</p>
             <p>R$ 3,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <button class="button">Adicionar</button>
           </div>
           <div class="item-produto">
             <img src="img/laranja.png" alt="">
             <p class="nome-produto">Laranja</p>
             <p class="quantidade">Dúzia</p>
             <p> R$ 8,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <button class="button">Adicionar</button>
           </div>
           <div class="item-produto">
             <img src="img/image 1-3.png" alt="">
             <p class="nome-produto">Alface</p>
             <p class="quantidade">Pé</p>
             <p> R$ 3,99</p>
-            <a href="#" class="button">Adicionar</a>
+            <button class="button">Adicionar</button>
           </div>
         </div>
       </div>
@@ -335,6 +390,8 @@
       </div>
     </div>
   </div>
+
+
   <!--FOOTER-->
   <div class="footer">
     <div class="icones-redes">
@@ -407,6 +464,7 @@
         </div>
       </div>
     </div>
+    <!--MODAL FORMAS DE PAGAMENTO-->
     <div class="modal fade" id="formasPagamento" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
       aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-xl">
@@ -432,6 +490,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
   <script src="js/script.js"></script>
 </body>
 

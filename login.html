@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--HEAD-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="feira, delivery, demoday">
+    <meta name="description" content="Site do projeto FeirAqui">
+    <!-- Bootstrap e icones -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8b7c10c663.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="img/logomarca_feiraqui.png" type="image/x-icon">
+    <title>FeirAqui - O MELHOR DELIVERY DE FEIRAS</title>
+</head>
+
+<body class="bg-light">
+    <!--LIBRAS-->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/Logo_feiraqui.png" alt="Logomarca laranja do feira aqui"></a>
+            <div class="collapse navbar-collapse itens-nav row">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#inicio">INÍCIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produtos">PRODUTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feiras">FEIRAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">CONTATO</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icones">
+                <button class="botaoicon"><i class="bi bi-search"></i></button>
+                <button class="botaoicon"><i class="bi bi-basket2-fill"></i></button>
+                <button class="botaoicon"><i class="fa-solid fa-circle-user"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!--LOGIN-->
+    <section class="login_section">
+        <div class="login_info">
+            <p class="titulo_login">LOGIN</p>
+            <div class="inputs">
+                <input class="input_emailsenha" type="email" name="" id="" placeholder="Digite seu email">
+                <input class="input_emailsenha" type="password" name="" id="" placeholder="Digite sua senha">
+            </div>
+            <div class="infosenha">
+                <div>
+                    <input type="checkbox" name="lembrar" id="" checked>
+                    <label for="lembrar">Lembre-me</label>
+                </div>
+                <p>Esqueceu sua senha?</p>
+            </div>
+            <div class="divbotao_entrar">
+                <a href="telaInicialFregues.html"><button class="botao_entrar" type="submit">ENTRAR</button></a>
+            </div>
+            <div class="ou_linha">
+                <div class="linha-horizontal"></div>
+                <p><b>ou</b></p>
+                <div class="linha-horizontal"></div>
+            </div>
+            <div class="opcao_gouf">
+                <a href="#" class="entrar_opcao"><img src="img/gmail.png" alt="">
+                    <h6> ENTRAR COM O GOOGLE </h6>
+                </a>
+                <a href="#" class="entrar_opcao"><img src="img/face.png" alt=""></i>
+                    <h6> ENTRAR COM O FACEBOOK</h6>
+                </a>
+            </div>
+            <div class="cadastro">
+                <p> <b>Não tem uma conta?</b></p>
+                <a href="#"><b>Cadastre-se</b></a>
+            </div>
+        </div>
+        <div class="imagem_login">
+            <img src="img/img-login.png" alt="">
+        </div>
+    </section>
+    <!--FOOTER-->
+    <div class="footer">
+        <div class="icones-redes">
+            <i class="bi bi-linkedin" style="color: white;"></i>
+            <i class="bi bi-github" style="color: white;"></i>
+            <i class="bi bi-instagram" style="color: white ;"></i>
+            <i class="bi bi-facebook" style="color: white;"></i>
+            <i class="fa-brands fa-figma" style="color: white;"></i>
+        </div>
+        <div class="footer-info">
+            <p>© Copyright FEIRAQUI | Todos os direitos reservados | <a>Política de Privacidade</a> | </a>Formas de
+                Pagamentos</a></p>
+            <p>(Carlos - Christian - Gabriel Leão - Isabelle Victoria - Lucas Lira - Lucas Santiago - Murilo - Raphael |
+                INSTITUTO PROA 2022 - EQUIPE 2)</p>
+        </div>
+    </div>
+</body>
+
+</html>
