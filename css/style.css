@@ -1286,6 +1286,7 @@ input[type="file"] {
     transform: scaleY(0);
 }
 
+
 .perfilFregues.active{
     transform: scaleY(1);
 }
@@ -1343,4 +1344,136 @@ input[type="file"] {
 .links-perfil i{
     margin-right: 30px;
     font-size: 30px;
+}
+
+/*FEIRANTES*/
+.paragrafoFormaNegocio{
+    color: #848383;
+    margin-top: -20px;
+}
+
+.formasEmpresaDiv{
+    display: flex;
+    margin-top: 20px;
+}
+
+.formaEmpresa{
+    color: #848383;
+    background-color: #F2F2F2;
+    width: 400px;
+    text-align: center;
+    height: 130px;
+    margin: 0px 30px 0px 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formaEmpresa:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*PERFIL FEIRANTE*/
+
+.perfilFeirante{
+    position: absolute;
+    background-color: #fff;
+    width: 350px;
+    right: 2%;
+    top: 70px;
+    border-radius: 0px 0px 20px 20px;
+    transform: scaleY(0);
+    position:fixed;
+}
+
+.perfilFeirante.active{
+    transform: scaleY(1);
+}
+
+.capa-feira{
+    transform: scale(0.8);
+    margin-top: 50px;
+}
+
+.perfil-feirante img{
+    border-radius: 360px;
+    height: 200px;
+    width: 200px;
+    position:relative;
+    margin-top: -120px;
+    margin-left: 250px;
+}
+
+.buttonVerMaisFeirante{
+    border: none;
+    background-color: transparent;
+    color: #FF8827;
+    margin-bottom: 15px;
+}
+
+.informacoesFeira-Feirante{
+    display: flex;
+    align-items: center;
+    margin-left: 350px;
+    font-size: 20px;
+}
+
+.informacoes-principaisFeira{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: end;
+    margin: -100px 0px 0px -150px;
+}
+
+.input-search{
+    border: none;
+    background-color: transparent;
+    width: 300px;
+}
+
+
+.search-feirante{
+    border: 2px solid #FF8827;
+    width: 400px;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.area-pesquisa{
+    width: 93%;
+    display: flex;
+    justify-content: end;
+    margin-top: 70px;
+}
+
+.item-produto-img{
+    width: 150px;
+}
+
+.item-produto-feirante {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10.7168px 10.7168px 21.4335px rgba(182, 182, 182, 0.3);
+    border-radius: 6px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    width: 200px;
+}
+
+.item-produto-feirante button{
+    margin-top: 20px;
+}
+
+.item-produto-feirante:hover{
+    transform: scale(1.1);
 }

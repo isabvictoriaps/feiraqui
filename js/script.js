@@ -26,3 +26,11 @@ document.querySelector("#botao-perfil").onclick = () => {
   perfilDiv.classList.toggle("active");
 };
 
+/* MEU PERFIL - FEIRANTE */
+
+var perfilFeiranteDiv = document.querySelector(".perfilFeirante");
+
+document.querySelector("#botao-perfilFeirante").onclick = () => {
+  console.log("oi");
+  perfilFeiranteDiv.classList.toggle("active");
+};
