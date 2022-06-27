@@ -1086,7 +1086,7 @@ input[type="file"] {
 }
 
 
-.carrinhoFregues.active{
+.carrinhoFregues.active {
     transform: scaleY(1);
 }
 
@@ -1110,7 +1110,7 @@ input[type="file"] {
     color: red;
 }
 
-.precoFrutaCarrinho{
+.precoFrutaCarrinho {
     margin-top: -15px;
     font-size: 12px;
     text-align: center;
@@ -1154,14 +1154,14 @@ input[type="file"] {
     margin-bottom: 50px;
 }
 
-.circulo1 img{
+.circulo1 img {
     position: absolute;
     bottom: 0px;
     right: 0px;
     transform: rotate('90deg');
 }
 
-.circulo2 img{
+.circulo2 img {
     position: absolute;
     width: 200px;
     bottom: 0px;
@@ -1184,7 +1184,7 @@ input[type="file"] {
 }
 
 /*FINALIZANDO PEDIDO*/
-.finalizar-pedido{
+.finalizar-pedido {
     margin-top: 90px;
     display: flex;
     justify-content: center;
@@ -1192,13 +1192,13 @@ input[type="file"] {
     color: #fff;
 }
 
-.divFinalizar-pedido h4{
+.divFinalizar-pedido h4 {
     color: #000000;
     text-align: center;
     margin: 30px;
 }
 
-.pagamentoPix{
+.pagamentoPix {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -1206,19 +1206,19 @@ input[type="file"] {
     font-size: 15px;
 }
 
-.pagamentoPix img{
+.pagamentoPix img {
     width: 200px;
     margin-bottom: 50px;
 }
 
-.linhaVertical{
+.linhaVertical {
     width: 0px;
     border: 0.5px solid #fff;
     height: 600px;
     margin: 0px 50px 0px 50px;
 }
 
-.divFinalizar-pedido form{
+.divFinalizar-pedido form {
     background-color: #FF8827;
     display: flex;
     flex-direction: row;
@@ -1227,7 +1227,7 @@ input[type="file"] {
     padding: 20px;
 }
 
-.divFinalizar-pedido form button{
+.divFinalizar-pedido form button {
     background-color: #5FB800;
     border: none;
     color: #fff;
@@ -1237,12 +1237,12 @@ input[type="file"] {
     margin: 20px 0px 40px 0px;
 }
 
-.pagamentoCartao img{
+.pagamentoCartao img {
     width: 350px;
     margin-top: 50px;
 }
 
-.pagamentoCartao{
+.pagamentoCartao {
     margin: 50px;
     display: flex;
     flex-direction: column;
@@ -1250,33 +1250,33 @@ input[type="file"] {
     align-items: center;
 }
 
-.valorTotal{
+.valorTotal {
     font-size: 30px;
     font-weight: bold;
 }
 
-.inputPagamento{
+.inputPagamento {
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
 
-.inputPagamento input{
+.inputPagamento input {
     width: 420px;
     border: none;
     height: 40px;
 }
 
-.validade-cvv{
+.validade-cvv {
     display: flex;
 }
 
-.validade-cvv input{
+.validade-cvv input {
     width: 200px;
 }
 
 /*PERFIL FREGUES*/
-.perfilFregues{
+.perfilFregues {
     position: absolute;
     background-color: #fff;
     width: 350px;
@@ -1287,17 +1287,17 @@ input[type="file"] {
 }
 
 
-.perfilFregues.active{
+.perfilFregues.active {
     transform: scaleY(1);
 }
 
-.img-fregues img{
+.img-fregues img {
     width: 100px;
     height: 100px;
     border-radius: 360px;
 }
 
-.div-perfil{
+.div-perfil {
     display: flex;
     background-color: #FF8827;
     justify-content: center;
@@ -1306,42 +1306,42 @@ input[type="file"] {
     border-radius: 10px 10px 0px 0px;
 }
 
-.informacoes-fregues{
+.informacoes-fregues {
     display: flex;
     flex-direction: column;
     font-size: 15px;
-    text-align:start;
+    text-align: start;
     justify-content: start;
     padding: 30px;
 }
 
-.informacoes-fregues p{
+.informacoes-fregues p {
     margin-top: -5px;
     text-align: start;
 }
 
-.informacoes-fregues p i{
+.informacoes-fregues p i {
     color: #fff;
     font-size: 15px;
     margin-right: 11px;
     margin-left: 0px;
 }
 
-.links-perfil{
+.links-perfil {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 15px;
 }
 
-.links-perfil a{
+.links-perfil a {
     text-decoration: none;
     color: #000;
     display: flex;
     align-items: center;
 }
 
-.produtos-feirante{
+.produtos-feirante {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1349,18 +1349,18 @@ input[type="file"] {
     margin-top: 50px;
 }
 
-.div-produtosFeirante{
+.div-produtosFeirante {
     background-color: #fff;
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start;
+    align-items: flex-start;
     border-radius: 20px;
 }
 
-.texto-editar{
-    margin:50px 0px 0px 0px;
+.texto-editar {
+    margin: 50px 0px 0px 0px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -1368,29 +1368,29 @@ input[type="file"] {
     padding: 0px 50px;
 }
 
-.texto-editar a{
+.texto-editar a {
     color: #FF8827;
     text-decoration: none;
     font-size: 20px;
 }
 
-.links-perfil i{
+.links-perfil i {
     margin-right: 30px;
     font-size: 30px;
 }
 
 /*FEIRANTES*/
-.paragrafoFormaNegocio{
+.paragrafoFormaNegocio {
     color: #848383;
     margin-top: -20px;
 }
 
-.formasEmpresaDiv{
+.formasEmpresaDiv {
     display: flex;
     margin-top: 20px;
 }
 
-.formaEmpresa{
+.formaEmpresa {
     color: #848383;
     background-color: #F2F2F2;
     width: 400px;
@@ -1404,14 +1404,14 @@ input[type="file"] {
     flex-direction: column;
 }
 
-.formaEmpresa:hover{
+.formaEmpresa:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
 
 /*PERFIL FEIRANTE*/
 
-.perfilFeirante{
+.perfilFeirante {
     position: absolute;
     background-color: #fff;
     width: 350px;
@@ -1419,42 +1419,42 @@ input[type="file"] {
     top: 70px;
     border-radius: 0px 0px 20px 20px;
     transform: scaleY(0);
-    position:fixed;
+    position: fixed;
 }
 
-.perfilFeirante.active{
+.perfilFeirante.active {
     transform: scaleY(1);
 }
 
-.capa-feira{
+.capa-feira {
     transform: scale(0.8);
     margin-top: 50px;
 }
 
-.perfil-feirante img{
+.perfil-feirante img {
     border-radius: 360px;
     height: 200px;
     width: 200px;
-    position:relative;
+    position: relative;
     margin-top: -120px;
     margin-left: 250px;
 }
 
-.buttonVerMaisFeirante{
+.buttonVerMaisFeirante {
     border: none;
     background-color: transparent;
     color: #FF8827;
     margin-bottom: 15px;
 }
 
-.informacoesFeira-Feirante{
+.informacoesFeira-Feirante {
     display: flex;
     align-items: center;
     margin-left: 350px;
     font-size: 20px;
 }
 
-.informacoes-principaisFeira{
+.informacoes-principaisFeira {
     display: flex;
     position: relative;
     width: 100%;
@@ -1462,14 +1462,14 @@ input[type="file"] {
     margin: -100px 0px 0px -150px;
 }
 
-.input-search{
+.input-search {
     border: none;
     background-color: transparent;
     width: 300px;
 }
 
 
-.search-feirante{
+.search-feirante {
     border: 2px solid #FF8827;
     width: 400px;
     display: flex;
@@ -1479,14 +1479,14 @@ input[type="file"] {
     border-radius: 10px;
 }
 
-.area-pesquisa{
+.area-pesquisa {
     width: 93%;
     display: flex;
     justify-content: end;
     margin-top: 70px;
 }
 
-.item-produto-img{
+.item-produto-img {
     width: 150px;
 }
 
@@ -1503,10 +1503,80 @@ input[type="file"] {
     width: 200px;
 }
 
-.item-produto-feirante button{
+.item-produto-feirante button {
     margin-top: 20px;
 }
 
-.item-produto-feirante:hover{
+.item-produto-feirante:hover {
     transform: scale(1.1);
+}
+
+/*ITEM PEDIDOS*/
+
+.section-pedidos {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-pedidos h2 {
+    padding: 40px;
+}
+
+
+
+.item-pedidos {
+    display: flex;
+    width: 900px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.nome-pedido {
+    margin: 0px 50px 0px 30px;
+}
+
+.nome-pedido h3 {
+    margin-bottom: 40px;
+}
+
+.horario-botao p {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-pedidos button {
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(92.29deg, rgba(250, 30, 35, 0.74) 0%, rgba(250, 30, 35, 0.76) 14.48%, rgba(250, 30, 35, 0.7) 24.36%, rgba(251, 55, 36, 0.7) 33.75%, rgba(253, 83, 37, 0.74) 46.94%, rgba(254, 110, 38, 0.83) 62.95%, rgba(255, 136, 39, 0.96) 75.16%, #FF8827 100%);
+    width: 180px;
+    color: #fff;
+}
+
+.item-pedidos .pedido-finalizado {
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(92.29deg, #939393 0%, rgba(147, 147, 147, 0.9) 18.12%, rgba(147, 147, 147, 0.8) 33.23%, rgba(147, 147, 147, 0.7) 49.9%, rgba(147, 147, 147, 0.6) 66.56%, rgba(147, 147, 147, 0.5) 83.23%, rgba(147, 147, 147, 0.4) 100%);
+    ;
+    width: 180px;
+    color: #fff;
+}
+
+.item-pedidos .pedido-entregue {
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(272.02deg, #FFE000 0.25%, rgba(255, 209, 6, 0.9) 15.22%, rgba(255, 192, 14, 0.8) 29.76%, rgba(255, 184, 18, 0.918644) 44.31%, #FFB414 60.41%, rgba(255, 164, 27, 0.8) 74.96%, rgba(255, 150, 33, 0.9) 87.43%, #FF8827 100%);
+    width: 180px;
+    color: #fff;
 }
