@@ -1,22 +1,82 @@
 /* importe do google fontes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
+
+/* GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;  
+}
+
+input:focus {
+    outline: none;
+}
+
+:root {
+    --main: #FF8827;
+    --body: #fff;
+    --text: #333333;
+    --box: 10.7168px 10.7168px 21.4335px rgba(182, 182, 182, 0.3);
+}
+
 /* BODY */
 
-.body {
-    background: #fff;
+.barraca-body,
+.telaFregues-body,
+.index-body {
+    overflow-x: hidden;
+}
+
+.sobreNos-body,
+.telaFregues-body,
+.telaFeirante-body,
+.body,
+.login-body,
+.index-body,
+.cadastro-body, 
+.cadastroEntregador-body, 
+.barraca-body, 
+.cadastroFeirante-body, 
+.cadastroFregues-body, 
+.contato-body, 
+.finalizarPedido-body, 
+.meuPerfilFregues,
+.painelADM-body,
+.pedidosFeirantes-body {
+    background-color: var(--body);
 }
 
 /* NAVBAR */
 
 .navbar {
-    background-color: #fff;
+    background-color: var(--body);
     padding-top: 20px;
-    border-bottom: #FF8827 2px solid;
+    border-bottom: var(--main) 2px solid;
+    max-width: 100%;
+}
+
+.nav-item #darkmode-icon {
+    margin-right: 60px;
+}
+
+.telaFeirante-body #darkmode-icon {
+    margin-right: 40px;
+}
+
+#darkmode-icon {
+    margin-left: 10px;
 }
 
 .navbar .nav-item .nav-link {
-    color: #FF8827;
+    color: var(--main);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -32,17 +92,22 @@
     margin-left: 50px;
 }
 
+.index-body .nav-item {
+    margin-left: 30px;
+}
+
 i {
-    color: #FF8827;
+    color: var(--main);
     font-size: 30px;
     margin-left: 20px;
 }
 
 i:hover {
-    color: #d3a65e;
+    opacity: .65;
 }
 
 .icones {
+    margin-left: 50px;
     margin-right: 50px;
 }
 
@@ -50,7 +115,7 @@ i:hover {
     transform: scale(0.8);
 }
 
-.botaoicon {
+.botaoicon, #toggle {
     border: none !important;
     background-color: transparent;
 }
@@ -59,10 +124,11 @@ i:hover {
     position: absolute;
     top: 15%;
     right: 23%;
-    background: #fff;
+    background-color: var(--body);
+    color: #333;
     width: 700px;
     height: 50px;
-    border: 2px solid #FF8827;
+    border: 2px solid var(--main);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -82,10 +148,11 @@ i:hover {
     border: none;
     border-radius: 10px;
     text-transform: none;
+    color: #333;
 }
 
 .search-form input::placeholder {
-    color: #FF8827;
+    color: var(--main);
     font-size: 20px;
 }
 
@@ -93,7 +160,13 @@ i:hover {
     cursor: pointer;
     font-size: 25px;
     padding: 10px;
-    color: #FF8827;
+    color: var(--main);
+}
+
+/* BOOTSTRAP */
+
+.dropdown-toggle::after {
+    color: var(--text);
 }
 
 /*CARROSSEL*/
@@ -103,7 +176,7 @@ i:hover {
 }
 
 .carousel-indicators button {
-    background-color: #FF8827 !important;
+    background-color: var(--main) !important;
     margin-left: 40px !important;
     transform: scale(1.8);
 }
@@ -119,7 +192,7 @@ i:hover {
 }
 
 .app_preview {
-    background-color: #FF8827;
+    background-color: var(--main);
     height: 500px;
     border-radius: 15px;
     width: 95%;
@@ -130,7 +203,7 @@ i:hover {
 }
 
 .descricao_app {
-    color: white;
+    color: #fff;
 }
 
 .descricao_app p {
@@ -158,9 +231,10 @@ i:hover {
 
 .produtos {
     margin-top: 40px;
-    background-color: #fff;
+    background-color: var(--body);
     border-radius: 15px;
     width: 95%;
+    color: var(--text);
 }
 
 .explorar a {
@@ -180,7 +254,7 @@ i:hover {
 }
 
 .item-categoria a {
-    color: black;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -211,7 +285,7 @@ i:hover {
 .item-produto {
     display: flex;
     flex-direction: column;
-    box-shadow: 10.7168px 10.7168px 21.4335px rgba(182, 182, 182, 0.3);
+    box-shadow: var(--box);
     border-radius: 6px;
     margin: 20px;
     padding: 10px;
@@ -220,11 +294,11 @@ i:hover {
 }
 
 .item-produto:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 .button {
-    background-color: #FF8827;
+    background-color: var(--main);
     width: 80%;
     height: 30px;
     color: white;
@@ -234,7 +308,7 @@ i:hover {
 }
 
 .button:hover {
-    color: #fff;
+    opacity: .65;
 }
 
 a .button {
@@ -266,8 +340,8 @@ p span {
 }
 
 .feirasproximas {
-    background-color: #fff;
-    border: 1px solid #FF8827;
+    background-color: var(--body);
+    border: 1px solid var(--main);
     border-radius: 15px;
     width: 95%;
     display: flex;
@@ -284,21 +358,22 @@ p span {
 .add-cep {
     margin-left: 200px;
     transform: scale(1.2);
+    color: var(--text);
 }
 
 .titulo-feira {
-    color: #FF8827;
+    color: var(--main);
 }
 
 .input-group i {
-    color: white;
+    color: #fff;
     font-size: 20px;
     text-align: center;
 }
 
 div .input-group-text {
-    background-color: #FF8827;
-
+    background-color: var(--main);
+    height: 52px;
 }
 
 /*SOBRE NÓS*/
@@ -312,7 +387,7 @@ div .input-group-text {
 }
 
 .sobre_nos {
-    background-color: #fff;
+    background-color: var(--body);
     border-radius: 15px;
     width: 95%;
     display: flex;
@@ -322,11 +397,11 @@ div .input-group-text {
 }
 
 .sobre_nos_titulo {
-    color: #FF8827;
+    color: var(--main);
     margin-top: 20px;
     width: 1220px;
     height: 120px;
-    background: rgba(196, 196, 196, 0.2);
+    background-color: rgba(196, 196, 196, 0.2);
     border-radius: 20px;
     display: flex;
     text-align: center;
@@ -342,7 +417,7 @@ div .input-group-text {
 }
 
 .sobre-v {
-    border: 1px solid #FF8827;
+    border: 1px solid var(--main);
     border-radius: 20px;
     margin-top: 30px;
     display: flex;
@@ -353,7 +428,7 @@ div .input-group-text {
 }
 
 .imagem-v {
-    background-color: #FF8827;
+    background-color: var(--main);
     border-radius: 20px;
 }
 
@@ -371,18 +446,21 @@ div .input-group-text {
 }
 
 .texto-v h4 {
-    color: #FF8827;
+    color: var(--main);
 }
 
 .footer {
-    background-color: #FF8827;
+    background-color: var(--main);
     margin-top: 50px;
-    width: 100%;
     height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.meuPerfilFregues-body .footer{
+    margin-top: 0px;
 }
 
 .footer-info {
@@ -418,6 +496,7 @@ div .input-group-text {
     justify-content: center;
     align-items: center;
     margin-top: 100px;
+    color: var(--text);
 }
 
 .login_info {
@@ -430,7 +509,7 @@ div .input-group-text {
 }
 
 .titulo_login {
-    color: #FF8827;
+    color: var(--main);
     font-weight: 700;
     font-size: 32px;
     text-align: center;
@@ -442,11 +521,12 @@ div .input-group-text {
 }
 
 .input_emailsenha {
-    background: rgba(196, 196, 196, 0.29);
+    background-color: rgba(196, 196, 196, 0.29);
     border-radius: 20px;
     border: transparent 1px solid;
     margin-top: 15px;
     height: 40px;
+    color: var(--text);
 }
 
 .input_emailsenha::placeholder {
@@ -460,7 +540,7 @@ div .input-group-text {
 }
 
 .botao_entrar {
-    background-color: #FF8827;
+    background-color: var(--main);
     border: none;
     border-radius: 10px;
     width: 150px;
@@ -485,7 +565,7 @@ div .input-group-text {
 }
 
 .opcao_gouf a {
-    color: #000;
+    color: var(--text);
     text-decoration: none;
     margin: 5px;
     font-size: 15px;
@@ -520,7 +600,7 @@ div .input-group-text {
 }
 
 .cadastro a {
-    color: #FF8827;
+    color: var(--main);
     text-decoration: none;
     margin-left: 15px;
 }
@@ -539,7 +619,7 @@ div .input-group-text {
 
 .linha-horizontal {
     width: 150px;
-    border: 1px solid rgb(35, 34, 34);
+    border: 1px solid var(--text);
     background-color: rgb(41, 39, 39);
 }
 
@@ -551,7 +631,7 @@ div .input-group-text {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: #FF8827;
+    color: var(--main);
 }
 
 .tituloCadastrarComo {
@@ -567,7 +647,7 @@ div .input-group-text {
 }
 
 .cadastrar {
-    background-color: #F2F2F2;
+    background-color: var(--body);
     margin: 50px;
     height: 300px;
     width: 300px;
@@ -576,7 +656,8 @@ div .input-group-text {
     align-items: center;
     flex-direction: column;
     font-size: 20px;
-    box-shadow: 10.7168px 10.7168px 21.4335px rgba(182, 182, 182, 0.3);
+    box-shadow: var(--box);
+    border: 2px solid var(--main);
     border-radius: 10px;
 }
 
@@ -590,17 +671,18 @@ div .input-group-text {
 
 .cadastrar a {
     text-decoration: none;
-    color: #FF8827;
+    color: var(--main);
     text-align: center;
 }
 
 .cadastrar a:hover {
-    color: #FF8827;
+    color: var(--main);
 }
 
 /*CADASTRO FREGUES*/
 
 .bemvindoFregues {
+    color: var(--text);
     margin-top: 130px;
     margin-left: 20%;
     margin-bottom: 40px;
@@ -611,7 +693,7 @@ div .input-group-text {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #FF8827;
+    color: var(--main);
 }
 
 .inputsCadastro {
@@ -627,7 +709,7 @@ div .input-group-text {
     height: 40px;
     border: none;
     margin: 30px 30px 0 0;
-    background: #EEEEEE;
+    background-color: #EEEEEE;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -635,7 +717,7 @@ div .input-group-text {
 
 .botaoCadastro {
     border: none;
-    background-color: #FF8827;
+    background-color: var(--main);
     width: 400px;
     height: 30px;
     border-radius: 10px;
@@ -646,7 +728,7 @@ div .input-group-text {
 
 .termosCadastro {
     display: flex;
-    color: #000;
+    color: var(--text);
     justify-content: center;
     align-items: center;
     margin-top: 40px;
@@ -662,6 +744,7 @@ input[type=checkbox] {
 }
 
 .fazerLogin {
+    color: var(--text);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -669,7 +752,7 @@ input[type=checkbox] {
 
 .fazerLogin a {
     text-decoration: none;
-    color: #FF8827;
+    color: var(--main);
     margin-top: -18px;
     margin-left: 10px;
 }
@@ -679,25 +762,26 @@ input[type=checkbox] {
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
+    color: var(--text);
 }
 
 .linha-horizontalCadastro {
     margin: 20px;
     width: 300px;
-    border: 1px solid rgb(35, 34, 34);
-    background-color: rgb(41, 39, 39);
+    border: 1px solid var(--text);
+    background-color: var(--text);
 }
 
 /*TELA DE CADASTRO - ENTREGADOR*/
 
 .codigoSeguranca {
-    border: 2px solid #FF8827;
+    border: 2px solid var(--main);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #000;
+    color: var(--text);
     margin-top: 50px;
     width: 600px;
     padding: 30px 20px;
@@ -705,25 +789,37 @@ input[type=checkbox] {
 
 .codigoSeguranca input {
     border-radius: 10px;
-    border: 1px solid #FF8827;
+    border: 1px solid var(--main);
     width: 200px;
     margin-bottom: 20px;
     height: 40px;
+}
+
+.codigoSeguranca input:focus {
+    outline: none;
 }
 
 .codigoSeguranca input::placeholder {
     padding: 15px;
 }
 
+.codigoSeguranca input[type=number] {
+    -moz-appearance: textfield;
+}
+
 .codigoSeguranca a {
-    color: #FF8827;
+    color: var(--main);
     margin-left: 10px;
     text-decoration: none;
 }
 
+.codigoSeguranca p {
+    color: var(--text);
+}
+
 
 .codigoSeguranca h4 {
-    color: #FF8827;
+    color: var(--main);
     margin-bottom: 20px;
 }
 
@@ -742,6 +838,7 @@ input[type=checkbox] {
 
 
 .entregaItem p {
+    color: var(--text);
     font-size: 25px;
 }
 
@@ -757,14 +854,14 @@ input[type=checkbox] {
 .quadradoDocumentos {
     width: 220px;
     height: 250px;
-    border: 2.5px solid #FF8827;
+    border: 2.5px solid var(--main);
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 10px 30px;
-    color: #000;
+    color: var(--text);
     font-weight: bold;
 }
 
@@ -785,12 +882,12 @@ form h5 {
 }
 
 .sectionCNH {
-    color: #000;
+    color: var(--text);
     text-align: center;
 }
 
 .sectionCNH h4 {
-    color: #FF8827;
+    color: var(--main);
     margin: 40px 0 30px 0;
     text-align: centera;
 }
@@ -805,12 +902,12 @@ form h5 {
 }
 
 .quadradoCNH h5 {
-    color: #000000;
+    color: var(--text);
     margin-top: 10px;
 }
 
 .quadradoCNH a {
-    color: #FF8827;
+    color: var(--main);
     text-decoration: none;
     margin-left: 10px;
     font-weight: 600;
@@ -828,7 +925,7 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #FF8827;
+    color: var(--main);
 }
 
 /*PAINEL ADM*/
@@ -840,17 +937,18 @@ form {
 }
 
 .containerPainelAdm {
-    background-color: #FF8827;
+    background-color: var(--main);
     border-radius: 15px;
-    box-shadow: 0 2px 5px #FF8827;
+    box-shadow: 0 2px 5px var(--main);
     overflow: hidden;
     width: 700px;
     max-width: 100%;
 }
 
 .header {
-    border-bottom: 1px solid #f0f0f0;
-    background-color: #f7f7f7;
+    border-bottom: 2px solid var(--main);
+    background-color: var(--body);
+    color: var(--text);
     padding: 20px 120px;
     display: flex;
     justify-content: center;
@@ -965,7 +1063,7 @@ input[type="file"] {
 }
 
 .textoSobre-nos {
-    background-color: #FF8827;
+    background-color: var(--main);
     height: 400px;
     width: 400px;
     padding: 20px;
@@ -993,31 +1091,28 @@ input[type="file"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--body);
 }
 
 .entreEmContato {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-}
-
-.entreEmContato iframe {
     margin-bottom: 50px;
 }
 
 .entreEmContato h3 {
-    color: #FF8827;
+    color: var(--main);
     margin-bottom: 50px;
     margin-top: 30px;
 }
 
 .formContato {
-    background-color: #fff;
+    background-color: var(--body);
     width: 1000px;
-    border: 2px #FF8827 solid;
+    border: 2px var(--main) solid;
     border-radius: 10px;
 }
 
@@ -1081,8 +1176,9 @@ input[type="file"] {
     border-radius: 20px;
     top: 0%;
     right: 1%;
-    background-color: #fff;
+    background-color: var(--body);
     transform: scaleY(0);
+    color: var(--text);
 }
 
 
@@ -1092,10 +1188,10 @@ input[type="file"] {
 
 
 .carrinhoFregues h4 {
-    color: #FF8827;
+    color: var(--main);
     font-size: 30px;
     border-top: 0px solid;
-    border-bottom: #FF8827 solid 3px;
+    border-bottom: var(--main) solid 3px;
     width: 350px;
     height: 50px;
     border-radius: 20px 20px 0 0;
@@ -1117,10 +1213,11 @@ input[type="file"] {
 }
 
 .contadorBotao {
+    cursor: pointer;
     background-color: #5FB800;
     width: 20px;
     height: 20px;
-    color: #fff;
+    color: var(--text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1137,7 +1234,7 @@ input[type="file"] {
 }
 
 .totalCarrinho {
-    border: 1px solid #FF8827;
+    border: 1px solid var(--main);
     width: 350px;
     text-align: center;
     margin: 50px;
@@ -1193,7 +1290,7 @@ input[type="file"] {
 }
 
 .divFinalizar-pedido h4 {
-    color: #000000;
+    color: #fff;
     text-align: center;
     margin: 30px;
 }
@@ -1219,7 +1316,7 @@ input[type="file"] {
 }
 
 .divFinalizar-pedido form {
-    background-color: #FF8827;
+    background-color: var(--main);
     display: flex;
     flex-direction: row;
     border-radius: 10px;
@@ -1278,7 +1375,7 @@ input[type="file"] {
 /*PERFIL FREGUES*/
 .perfilFregues {
     position: absolute;
-    background-color: #fff;
+    background-color: var(--body);
     width: 350px;
     right: 2%;
     top: 70px;
@@ -1299,10 +1396,10 @@ input[type="file"] {
 
 .div-perfil {
     display: flex;
-    background-color: #FF8827;
+    background-color: var(--main);
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: var(--body);
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -1321,7 +1418,7 @@ input[type="file"] {
 }
 
 .informacoes-fregues p i {
-    color: #fff;
+    color: var(--text);
     font-size: 15px;
     margin-right: 11px;
     margin-left: 0px;
@@ -1350,7 +1447,8 @@ input[type="file"] {
 }
 
 .div-produtosFeirante {
-    background-color: #fff;
+    background-color: var(--body);
+    color: var(--text);
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -1369,7 +1467,7 @@ input[type="file"] {
 }
 
 .texto-editar a {
-    color: #FF8827;
+    color: var(--main);
     text-decoration: none;
     font-size: 20px;
 }
@@ -1413,7 +1511,7 @@ input[type="file"] {
 
 .perfilFeirante {
     position: absolute;
-    background-color: #fff;
+    background-color: var(--body);
     width: 350px;
     right: 2%;
     top: 70px;
@@ -1443,7 +1541,7 @@ input[type="file"] {
 .buttonVerMaisFeirante {
     border: none;
     background-color: transparent;
-    color: #FF8827;
+    color: var(--main);
     margin-bottom: 15px;
 }
 
@@ -1455,6 +1553,7 @@ input[type="file"] {
 }
 
 .informacoes-principaisFeira {
+    color: var(--text);
     display: flex;
     position: relative;
     width: 100%;
@@ -1465,12 +1564,20 @@ input[type="file"] {
 .input-search {
     border: none;
     background-color: transparent;
-    width: 300px;
+    width: 330px;
+    color: var(--text);
 }
 
+.input-search:focus {
+    outline: none;
+}
+
+#searchButton {
+    cursor: pointer;
+}
 
 .search-feirante {
-    border: 2px solid #FF8827;
+    border: 2px solid var(--main);
     width: 400px;
     display: flex;
     height: 45px;
@@ -1493,13 +1600,15 @@ input[type="file"] {
 .item-produto-feirante {
     display: flex;
     flex-direction: column;
-    box-shadow: 10.7168px 10.7168px 21.4335px rgba(182, 182, 182, 0.3);
+    border: 2px solid var(--main);
+    box-shadow: var(--box);
+    border-radius: 8px;
     border-radius: 6px;
     margin: 20px;
     padding: 10px;
     text-align: center;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--body);
     width: 200px;
 }
 
@@ -1514,6 +1623,7 @@ input[type="file"] {
 /*ITEM PEDIDOS*/
 
 .section-pedidos {
+    color: var(--text);
     margin-top: 80px;
     display: flex;
     flex-direction: column;
@@ -1526,13 +1636,12 @@ input[type="file"] {
 }
 
 
-
 .item-pedidos {
     display: flex;
     width: 900px;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
+    background-color: var(--body);
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0px;
@@ -1557,9 +1666,9 @@ input[type="file"] {
     padding: 10px 40px;
     border-radius: 5px;
     border: none;
-    background: linear-gradient(92.29deg, rgba(250, 30, 35, 0.74) 0%, rgba(250, 30, 35, 0.76) 14.48%, rgba(250, 30, 35, 0.7) 24.36%, rgba(251, 55, 36, 0.7) 33.75%, rgba(253, 83, 37, 0.74) 46.94%, rgba(254, 110, 38, 0.83) 62.95%, rgba(255, 136, 39, 0.96) 75.16%, #FF8827 100%);
+    background-color: linear-gradient(92.29deg, rgba(250, 30, 35, 0.74) 0%, rgba(250, 30, 35, 0.76) 14.48%, rgba(250, 30, 35, 0.7) 24.36%, rgba(251, 55, 36, 0.7) 33.75%, rgba(253, 83, 37, 0.74) 46.94%, rgba(254, 110, 38, 0.83) 62.95%, rgba(255, 136, 39, 0.96) 75.16%, var(--main) 100%);
     width: 180px;
-    color: #fff;
+    color: var(--text);
 }
 
 .item-pedidos .pedido-finalizado {
@@ -1576,7 +1685,7 @@ input[type="file"] {
     padding: 10px 40px;
     border-radius: 5px;
     border: none;
-    background: linear-gradient(272.02deg, #FFE000 0.25%, rgba(255, 209, 6, 0.9) 15.22%, rgba(255, 192, 14, 0.8) 29.76%, rgba(255, 184, 18, 0.918644) 44.31%, #FFB414 60.41%, rgba(255, 164, 27, 0.8) 74.96%, rgba(255, 150, 33, 0.9) 87.43%, #FF8827 100%);
+    background-color: linear-gradient(272.02deg, #FFE000 0.25%, rgba(255, 209, 6, 0.9) 15.22%, rgba(255, 192, 14, 0.8) 29.76%, rgba(255, 184, 18, 0.918644) 44.31%, #FFB414 60.41%, rgba(255, 164, 27, 0.8) 74.96%, rgba(255, 150, 33, 0.9) 87.43%, var(--main) 100%);
     width: 180px;
-    color: #fff;
+    color: var(--text);
 }
