@@ -10,16 +10,16 @@
   <meta name="keywords" content="feira, delivery, demoday">
   <meta name="description" content="Site do projeto FeirAqui">
   <!-- Bootstrap e icones -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/8b7c10c663.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-  <link rel="shortcut icon" href="img/logomarca_feiraqui.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/img/logomarca_feiraqui.png" type="image/x-icon">
   <title>FeirAqui - O MELHOR DELIVERY DE FEIRAS</title>
 </head>
 
-<body class="bg-light">
+<body class="pedidosFeirantes-body">
   <!--LIBRAS-->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
@@ -34,23 +34,26 @@
   <!--NAVBAR-->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="img/Logo_feiraqui.png" alt="Logomarca laranja do feira aqui"></a>
+      <a class="navbar-brand" href="#"><img src="../assets/img/Logo_feiraqui.png" alt="Logomarca laranja do feira aqui"></a>
       <div class="collapse navbar-collapse itens-nav row">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " href="telaInicialFregues.html">MINHA BARRACA</a>
+            <a class="nav-link " href="telaInicialFregues.html">INÍCIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#produtos">PEDIDOS</a>
+            <a class="nav-link" href="#produtos">PRODUTOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#feiras">MERCADORIAS</a>
+            <a class="nav-link" href="#feiras">FEIRAS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sobreNos.html">DESEMPENHOS</a>
+            <a class="nav-link" href="sobreNos.html">SOBRE</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contato.html">CONTATO</a>
+          </li>
+          <li>
+            <a class="nav-link" id="darkmode-icon"><button id="toggle"><i class="fa-solid fa-moon" id="toggle-icon"></i></button></a>
           </li>
         </ul>
       </div>
@@ -64,7 +67,7 @@
     <div class="perfilFeirante">
       <div class="div-perfil">
         <div class="img-fregues">
-          <img src="img/perfil-feirante.jpg" alt="">
+          <img src="../assets/img/perfil-feirante.jpg" alt="">
         </div>
         <div class="informacoes-fregues">
           <h6>Cida Tempeiros</h6>
@@ -84,30 +87,30 @@
   <section class="section-pedidos">
     <h2>Pedidos</h2>
     <div class="item-pedidos">
-      <img src="img/Rectangle 166.png" alt="">
+      <img src="../assets/img/Rectangle 166.png" alt="">
       <div class="nome-pedido">
         <h3>Lucas Lira</h3>
         <p>40g de Orégano - 1 Maço de Manjericão - 1 Kg de cebola roxa - 8 Uni de Limão</p>
       </div>
       <div class="horario-botao">
         <p>12:30</p>
-        <button>Finalizar</button>
+        <button class="finalizar">Finalizar</button>
       </div>
     </div>
     <div class="item-pedidos">
-      <img src="img/Rectangle 164.png" alt="">
+      <img src="../assets/img/Rectangle 164.png" alt="">
       <div class="nome-pedido">
         <h3>Murilo Oliveira</h3>
         <p>1 Maço de Coentro - 1 Maço de Salsinha - 100g de pimenta Dedo de Moça - 8 Uni de Limão - 1 kg de cebola</p>
       </div>
       <div class="horario-botao">
         <p>12:23</p>
-        <button>Finalizar</button>
+        <button class="finalizar">Finalizar</button>
       </div>
     </div>
     <h2>Saiu para entrega</h2>
     <div class="item-pedidos">
-      <img src="img/Rectangle 169.png" alt="">
+      <img src="../assets/img/Rectangle 169.png" alt="">
       <div class="nome-pedido">
         <h3>Lucas Santiago</h3>
         <p>100g de Colorau - 100g de Ana Maria - 100g de pimenta Bode - 3 Uni de Alho</p>
@@ -118,7 +121,7 @@
       </div>
     </div>
     <div class="item-pedidos">
-      <img src="img/Rectangle 174.png" alt="">
+      <img src="../assets/img/Rectangle 174.png" alt="">
       <div class="nome-pedido">
         <h3>Evelyn Tenan</h3>
         <p>1 Maço de Coentro - 1 Maço de Salsinha - 100g de pimenta Dedo de Moça - 8 Uni de Limão - 1 kg de cebola</p>
@@ -130,7 +133,7 @@
     </div>
     <h2>Finalizado</h2>
     <div class="item-pedidos">
-      <img src="img/Rectangle 160.png" alt="">
+      <img src="../assets/img/Rectangle 160.png" alt="">
       <div class="nome-pedido">
         <h3>Carlos Flores</h3>
         <p>200g de Chimichurri - 100g de Pimenta do Reino - 1 Maço de Coentro - 1 Kg de cebola - 8 Uni de Limão</p>
@@ -141,7 +144,7 @@
       </div>
     </div>
     <div class="item-pedidos">
-      <img src="img/Rectangle 173.png" alt="">
+      <img src="../assets/img/Rectangle 173.png" alt="">
       <div class="nome-pedido">
         <h3>Isabelle Victoria</h3>
         <p>100g de Chimichurri - 100g de Ana Maria - 1 Maço de Coentro - 1 Maço de Salsinha - 8 Uni de Limão - 1 kg de
@@ -154,7 +157,7 @@
     </div>
 
     <div class="item-pedidos">
-      <img src="img/Rectangle 175.png" alt="">
+      <img src="../assets/img/Rectangle 175.png" alt="">
       <div class="nome-pedido">
         <h3>Raphael Alves</h3>
         <p>100g de Chimichurri - 100g de Ana Maria - 1 Maço de Coentro - 1 Maço de Salsinha - 8 Uni de Limão - 1 kg de
@@ -248,12 +251,12 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <img src="img/image 39.png" alt="">
-            <img src="img/image 40.png" alt="">
-            <img src="img/image 42.png" alt="">
-            <img src="img/image 45.png" alt="">
-            <img src="img/image 43.png" alt="">
-            <img src="img/image 47.png" alt="">
+            <img src="../assets/img/image 39.png" alt="">
+            <img src="../assets/img/image 40.png" alt="">
+            <img src="../assets/img/image 42.png" alt="">
+            <img src="../assets/img/image 45.png" alt="">
+            <img src="../assets/img/image 43.png" alt="">
+            <img src="../assets/img/image 47.png" alt="">
           </div>
         </div>
       </div>
@@ -264,8 +267,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/darkmode.js"></script>
 </body>
 
 </html>

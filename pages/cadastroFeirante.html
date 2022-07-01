@@ -10,16 +10,16 @@
     <meta name="keywords" content="feira, delivery, demoday">
     <meta name="description" content="Site do projeto FeirAqui">
     <!-- Bootstrap e icones -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/8b7c10c663.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="img/logomarca_feiraqui.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/logomarca_feiraqui.png" type="image/x-icon">
     <title>FeirAqui - O MELHOR DELIVERY DE FEIRAS</title>
 </head>
 
-<body class="bg-light">
+<body class="cadastroFeirante-body">
     <!--LIBRAS-->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -34,7 +34,7 @@
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/Logo_feiraqui.png" alt="Logomarca laranja do feira aqui"></a>
+            <a class="navbar-brand" href="#"><img src="../assets/img/Logo_feiraqui.png" alt="Logomarca laranja do feira aqui"></a>
             <div class="collapse navbar-collapse itens-nav row">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -52,6 +52,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contato.html">CONTATO</a>
                     </li>
+                    <li>
+                        <a class="nav-link" id="darkmode-icon"><button id="toggle"><i class="fa-solid fa-moon" id="toggle-icon"></i></button></a>
+                    </li>
                 </ul>
             </div>
             <div class="icones">
@@ -64,28 +67,84 @@
         </div>
     </nav>
 
-    <!--SECTION CADASTRO-->
-    <div class="cadastrarComo">
-        <div>
-            <h2 class="tituloCadastrarComo">Cadastrar-se como:</h2>
-        </div>
-        <div class="categoriasCadastro">
-            <div class="cadastrar">
-                <a href="cadastroFregues.html"><img src="img/image 36.png" alt="">
-                    <p><b>FREGUÊS</b></p>
-                </a>
+    <div class="bemvindoFregues">
+        <h2>Bem vindo, Feirante!</h2>
+        <p>Insira seus dados</p>
+    </div>
+    <div class="informacoes">
+        <h5>QUERO ME CADASTRAR</h5>
+        <form action="" method="post">
+            <div class="inputsCadastro">
+                <input class="inputsdoCadastro" placeholder="Nome completo" type="text" name="" id="">
+                <input class="inputsdoCadastro" placeholder="Email" type="email" name="" id="">
             </div>
-            <div class="cadastrar"><a href="">
-                    <img src="img/image 29.png" alt="">
-                    <p><b>FEIRANTE</b></p>
-                </a>
+            <div class="inputsCadastro">
+                <input class="inputsdoCadastro" placeholder="Telefone" type="tel" name="" id="">
+                <input class="inputsdoCadastro" placeholder="CPF" type="number" name="" id="">
             </div>
-            <div class="cadastrar"><a href="cadastroEntregador.html">
-                    <img src="img/image 24.png" alt="">
-                    <p><b>ENTREGADOR</b></p>
-                </a>
+            <div class="inputsCadastro">
+                <input class="inputsdoCadastro" placeholder="RG" type="tel" name="" id="">
+                <input class="inputsdoCadastro" placeholder="Orgão Emissor" type="number" name="" id="">
             </div>
-        </div>
+            <div class="inputsCadastro">
+                <input class="inputsdoCadastro" placeholder="Crie uma senha" type="password" name="" id="">
+                <input class="inputsdoCadastro" placeholder="Confirme sua senha" type="password" name="" id="">
+            </div>
+            <div class="codigoSeguranca">
+                <h4>Insira seu código de segurança</h4>
+                <p>Por favor, insira o código de segurança de 6 digitos que enviamos <br> para o número <b>+55 11
+                        90000-0000</b></p>
+                <input class="Teste" type="number" name="" id="" placeholder="Digite o código">
+                <p>Não recebeu o código de segurança?<a href="">Solicite um novo.</p></a>
+            </div>
+            <h5>Informações da barraca</h5>
+            <div class="inputsCadastro">
+                <input class="inputsdoCadastro" placeholder="Nome/Razão social" type="text" name="" id="">
+                <input class="inputsdoCadastro" placeholder="CNPJ/CPF" type="number" name="" id="">
+            </div>
+            <div class="inputsCadastro">
+                <input class="inputsdoCadastro" placeholder="Matrícula" type="text" name="" id="">
+                <input class="inputsdoCadastro" placeholder="Tipo de mercadoria" type="number" name="" id="">
+            </div>
+            <div class="inputsCadastro">
+                <input class="inputsdoCadastro" placeholder="Nome da barraca" type="text" name="" id="">
+                <input class="inputsdoCadastro" placeholder="Telefone da barraca" type="number" name="" id="">
+            </div>
+            <h5>Escolha a sua forma de negócio</h5>
+            <p class="paragrafoFormaNegocio">Forma de negócio em que sua barraca se enquadra</p>
+            <div class="formasEmpresaDiv">
+                <div class="formaEmpresa">
+                    <h5>MEI</h5>
+                    <p>Microempreendedor individual</p>
+                </div>
+                <div class="formaEmpresa">
+                    <h5>ME</h5>
+                    <p>Microempresas e outros</p>
+                </div>
+            </div>
+
+            <div class="informacoesBancarias">
+                <h5>Informações Bancárias</h5>
+                <div class="inputsCadastro">
+                    <input class="inputsdoCadastro" placeholder="Banco" type="text" name="" id="">
+                    <input class="inputsdoCadastro" placeholder="Conta" type="number" name="" id="">
+                </div>
+                <div class="inputsCadastro">
+                    <input class="inputsdoCadastro" placeholder="Agência" type="number" name="" id="">
+                    <input class="inputsdoCadastro" placeholder="Digito" type="text" name="" id="">
+                </div>
+            </div>
+            <div class="termosCadastro"><input type="checkbox" name="concordoTermos" id="" checked>
+                <label for="concordoTermos">Li e concordo com os <b>Termos e Condições de Uso</b>. Os termos estarão
+                    disponíveis
+                    <br>para consulta dentro da plataforma</label>
+            </div>
+            <button class="botaoCadastro">CADASTRAR</button>
+    </div>
+    </form>
+    <div class="fazerLogin">
+        <p> <b>Já tem uma conta?</b></p>
+        <a href="#"><b>Faça login!</b></a>
     </div>
 
     <!--FOOTER-->
@@ -194,12 +253,12 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <img src="img/image 39.png" alt="">
-                        <img src="img/image 40.png" alt="">
-                        <img src="img/image 42.png" alt="">
-                        <img src="img/image 45.png" alt="">
-                        <img src="img/image 43.png" alt="">
-                        <img src="img/image 47.png" alt="">
+                        <img src="../assets/img/image 39.png" alt="">
+                        <img src="../assets/img/image 40.png" alt="">
+                        <img src="../assets/img/image 42.png" alt="">
+                        <img src="../assets/img/image 45.png" alt="">
+                        <img src="../assets/img/image 43.png" alt="">
+                        <img src="../assets/img/image 47.png" alt="">
                     </div>
                 </div>
             </div>
@@ -210,6 +269,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
+    <script src="../assets/js/darkmode.js"></script>
 </body>
 
 </html>
