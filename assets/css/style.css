@@ -13,7 +13,7 @@
 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0;  
+    margin: 0;
 }
 
 input:focus {
@@ -41,13 +41,13 @@ input:focus {
 .body,
 .login-body,
 .index-body,
-.cadastro-body, 
-.cadastroEntregador-body, 
-.barraca-body, 
-.cadastroFeirante-body, 
-.cadastroFregues-body, 
-.contato-body, 
-.finalizarPedido-body, 
+.cadastro-body,
+.cadastroEntregador-body,
+.barraca-body,
+.cadastroFeirante-body,
+.cadastroFregues-body,
+.contato-body,
+.finalizarPedido-body,
 .meuPerfilFregues,
 .painelADM-body,
 .pedidosFeirantes-body {
@@ -115,7 +115,8 @@ i:hover {
     transform: scale(0.8);
 }
 
-.botaoicon, #toggle {
+.botaoicon,
+#toggle {
     border: none !important;
     background-color: transparent;
 }
@@ -460,7 +461,7 @@ div .input-group-text {
     width: 100%;
 }
 
-.meuPerfilFregues-body .footer{
+.meuPerfilFregues-body .footer {
     margin-top: 0px;
 }
 
@@ -1648,6 +1649,7 @@ input[type="file"] {
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .nome-pedido {
@@ -1665,7 +1667,7 @@ input[type="file"] {
     justify-content: center;
 }
 
-.item-pedidos .finalizar {
+.finalizar {
     padding: 10px 40px;
     border-radius: 5px;
     border: none;
@@ -1674,7 +1676,7 @@ input[type="file"] {
     color: #fff;
 }
 
-.item-pedidos .pedido-finalizado {
+.pedido-finalizado {
     padding: 10px 40px;
     border-radius: 5px;
     border: none;
@@ -1684,7 +1686,7 @@ input[type="file"] {
     color: #fff;
 }
 
-.item-pedidos .pedido-entregue {
+.pedido-entregue {
     padding: 10px 40px;
     border-radius: 5px;
     border: none;
@@ -1743,6 +1745,12 @@ input[type="file"] {
 
 .cor-verde {
     color: #5FB800;
+    margin-left: 10px;
+}
+
+.cor-laranja {
+    color: #FF8827;
+    font-size: 50px;
 }
 
 .categorias-itens {
@@ -1761,14 +1769,274 @@ input[type="file"] {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-.item-categoria-explorar img{
+.item-categoria-explorar img {
     transform: scale(0.8);
 }
 
-.item-categoria-explorar:hover{
+.item-categoria-explorar:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+
+/*Tela inicial - entregador*/
+
+.painel-feirante {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.label-online {
+    color: #868686;
+    font-size: 28px;
+}
+
+.informacao-entregador {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 200px;
+}
+
+.icon-online {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #33f321;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2eb30d;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.mapa-entregador {
+    transform: scale(0.8);
+}
+
+.linha-vertical {
+    width: 0px;
+    border: 0.5px solid rgb(0, 0, 0);
+    height: 100px;
+    margin: 0px 50px 0px 50px;
+}
+
+.valor-forma {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.informacoes-pedido-entregador {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes-pedido-entregador button {
+    margin-left: 720px;
+}
+
+.info-p {
+    font-size: 25px;
+}
+
+.proximas-entregas-entregador h2 {
+    text-align: center;
+    padding: 80px 0px;
+}
+
+
+.item-pedidos-entregador {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    gap: 20px;
+}
+
+.nome-pedido-entregador {
+    margin: 0px 50px 0px 30px;
+}
+
+.nome-pedido h3 {
+    margin-bottom: 40px;
+}
+
+.imagem-horario-entregador {
+    display: flex;
+    gap: 30px;
+}
+
+.imagem-horario-entregador img {
+    width: 130px;
+}
+
+.itens-pedidos-entregador {
+    display: flex;
+    gap: 10px;
+}
+
+.aceitar-corrida-entregador {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    gap: 20px;
+}
+
+.aceitar-corrida-entregador a{
+    color: #FF8827;
+    text-decoration: none;
+}
+
+.aceitar-entrega {
+    background-color: #FF8827;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.localizacao-entrega{
+    display: flex;
+}
+
+.localizacao-entrega img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.entregafinalizada-pendente i{
+    color: #fff;
+    margin-right: 20px;
+}
+
+.desempenho-entregador{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.desempenho-entregador h2{
+    margin: 50px 0px;
+}
+
+.entregas-finalizadas-entregador{
+    background-color: #FF8827;
+    width: 1000px;
+    color: #fff;
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.linha-vertical-branca{
+    width: 0px;
+    border: 0.5px solid rgb(255, 255, 255);
+    height: 200px;
+}
+
+.valor-recebido-entregador{
+    text-align: center;
+}
+
+.entregafinalizada-pendente{
+    text-align: center;
+}
+
+.ver-historico{
+    width: 100%;
+    text-align: end;
+    padding-right: 260px;
+    margin-top: 10px;
+}
+
+.ver-historico a{
+    text-decoration: none;
+    color: #FF8827 !important;
+    font-size: 28px;
 }
