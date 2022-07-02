@@ -14,30 +14,42 @@ const iCEPfregues = document.querySelector("#cepFregues");
 const ibairroFregues = document.querySelector("#bairroFregues");
 
 function cadastrar() {
-
-  fetch("http://localhost:8080/usuarios", 
+  fetch("http://localhost:8080/usuario/cadastro/", 
   {
     headers: {
       "Accept": "application/json",
-      "Content-Type": "application/json",
+      "Content-Type": "application/json"
     },
     method: "POST",
     body: JSON.stringify({
+      id: 99,
       nome_completo: inomeFregues.value,
       email: iemailFregues.value,
-      telefone: itelefoneFregues.value,
+      rg_numero: 530002830,
+      rg_orgao_emissor: "SSP",
       cpf: icpfFregues.value,
       senha: isenhaFregues.value,
-      confirmar_senha: iconfirmarSenhaFregues.value,
-      endereco: ienderecoFregues.value,
-      numero_casa: inumeroCasaFregues.value,
-      cep: iCEPfregues.value,
-      bairro_fregues: ibairroFregues.value
+      endereco: {
+        id: 4,
+        cep: iCEPfregues.value,
+        rua: ienderecoFregues.value,
+        cidade: "São Paulo",
+        uf: "SP",
+        bairro_fregues: ibairroFregues.value,
+        numero_casa: inumeroCasaFregues.value,
+        complemento: ""
+      },
+      telefone: {
+        id: 1,
+        prefixo: 55,
+        ddd: 11,
+        numero: itelefoneFregues.value
+      }
     })
   })
-    .then(function (res) { console.log(res) })
-    .catch(function (res) { console.log(res) })
-};
+  .then(function (response) { console.log(response) })
+  .catch(function (error) { console.log(error) })
+}
 
 function limpar() {
   inomeFregues.value = "";
