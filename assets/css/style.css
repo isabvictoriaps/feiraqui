@@ -372,9 +372,13 @@ p span {
     text-align: center;
 }
 
+.input-group input{
+    height: 40px;
+}
+
 div .input-group-text {
     background-color: var(--main);
-    height: 52px;
+    height:40px;
 }
 
 /*SOBRE NÓS*/
@@ -1547,6 +1551,7 @@ input[type="file"] {
     background-color: transparent;
     color: var(--main);
     margin-bottom: 15px;
+    margin-right: px;
 }
 
 .informacoesFeira-Feirante {
@@ -1593,8 +1598,30 @@ input[type="file"] {
 .area-pesquisa {
     width: 93%;
     display: flex;
-    justify-content: end;
-    margin-top: 70px;
+    justify-content:space-between;
+    margin-top: 100px;
+}
+
+.adicionar-produto a{
+    background-color: #FF8827;
+    color: white;
+    padding: 15px 30px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 200px;
+}
+
+.adicionar-produto a i{
+    color: white;
+    margin-right: 30px;
+}
+
+.adicionar-produto a:hover{
+    color: #fff;
+
 }
 
 .item-produto-img {
@@ -1609,7 +1636,7 @@ input[type="file"] {
     border-radius: 8px;
     border-radius: 6px;
     margin: 20px;
-    padding: 10px;
+    padding: 20px 10px;
     text-align: center;
     align-items: center;
     background-color: var(--body);
