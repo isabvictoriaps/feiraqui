@@ -2088,3 +2088,9 @@ input:checked+.slider:before {
     text-transform: uppercase;
     font-size: 20px;
 }
+
+/* Todas as barracas*/
+.imagem-barraca{
+    height: 150px;
+    width: 150px;
+}
