@@ -19,7 +19,7 @@
   <title>FeirAqui - O MELHOR DELIVERY DE FEIRAS</title>
 </head>
 
-<body class="barraca-body">
+<body class="telaFeirante-body">
   <!--LIBRAS-->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
@@ -38,27 +38,46 @@
       <div class="collapse navbar-collapse itens-nav row">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " href="index.html">INÍCIO</a>
+            <a class="nav-link " href="telaInicialFregues.html">MINHA BARRACA</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#produtos">PRODUTOS</a>
+            <a class="nav-link" href="pedidos-feirante.html">PEDIDOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#feiras">FEIRAS</a>
+            <a class="nav-link" href="vendas.html">VENDAS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sobreNos.html">SOBRE NÓS</a>
+            <a class="nav-link" href="contatoFeirante.html">CONTATO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contato.html">CONTATO</a>
-          </li>
-          <li>
             <a class="nav-link" id="darkmode-icon"><button id="toggle"><i class="fa-solid fa-moon" id="toggle-icon"></i></button></a>
           </li>
         </ul>
       </div>
-      <div>
+      <div class="icones">
         <button class="botaoicon" id="botao-perfilFeirante"><i class=" fa-solid fa-circle-user"></i></button>
+      </div>
+    </div>
+
+    <!--Perfil Fregues-->
+
+    <div class="perfilFeirante">
+      <div class="div-perfil">
+        <div class="img-fregues">
+          <img src="../assets/img/perfil-feirante.jpg" alt="imagem - feirante">
+        </div>
+        <div class="informacoes-fregues">
+          <h6>Cida Tempeiros</h6>
+          <p>Feirante</p>
+          <p><i class="bi bi-star"></i>4.9</p>
+        </div>
+      </div>
+      <div class="links-perfil">
+        <a href=""><i class="bi bi-list-ul"></i> Categorias</a>
+        <a href="meuPerfilFregues.html"><i class="bi bi-person-circle"></i>Meu perfil</a>
+        <a href=""><i class="bi bi-bicycle"></i>Painel entregador</a>
+        <a href=""><i class="bi bi-shop"></i>Painel freguês</a>
+        <a href="index.html"><i class="bi bi-box-arrow-right"></i>Sair</a>
       </div>
     </div>
   </nav>
@@ -66,8 +85,8 @@
   <!--INFORMAÇÕES DO FEIRANTE (CAPA/IMAGEM DE PERFIL)-->
   <section class="">
     <div>
-      <img class="capa-feira" src="../assets/img/PHOTO-2022-05-04-21-19-49 1.png" alt="">
-      <div class="perfil-feirante"><img src="../assets/img/perfil-feirante.jpg" alt=""></div>
+      <img class="capa-feira" src="../assets/img/PHOTO-2022-05-04-21-19-49 1.png" alt="capa do perfil do feirante">
+      <div class="perfil-feirante"><img src="../assets/img/perfil-feirante.jpg" alt="foto de perfil - feirante"></div>
     </div>
     <div>
       <div class="informacoes-principaisFeira">
@@ -76,53 +95,59 @@
           <p>(ervas aromáticas - tempeiros - outros)</p>
         </div>
         <div class="informacoesFeira-Feirante">
-          <button class="buttonVerMaisFeirante">Ver mais</button>
-          <p> | Valor mínimo 10,00</p>
+          <button class="buttonVerMaisFeirante">Ver mais </button>
+          <p>| Valor mínimo 10,00</p>
         </div>
       </div>
     </div>
     <div class="area-pesquisa">
+      <div class="adicionar-produto">
+        <a href="painelAdm.html">Voltar para as barracas</a>
+      </div>
       <div class="search-feirante">
         <input class="input-search" type="text" name="" id="" placeholder="Busque aqui">
-        <i id="searchButton" class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
       </div>
     </div>
   </section>
   <section class="produtos-feirante">
     <div class="div-produtosFeirante">
-      <h2 style="margin:30px 0px 0px 50px;">Temperos</h2>
+      <div class="texto-editar">
+        <h2>Temperos</h2>
+        <a href="#">Editar</a>
+      </div>
       <div class="itens-produtos">
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-1.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 72-1.png" alt="Curry">
+          <p class="nome-produto">Curry</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-2.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 72-2.png" alt="Ana Maria">
+          <p class="nome-produto">Ana Maria</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-3.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 72-3.png" alt="Cebola em pó">
+          <p class="nome-produto">Cebola em pó</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-4.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 72-4.png" alt="Colorau">
+          <p class="nome-produto">Colorau</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-5.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 72-5.png" alt="Chia">
+          <p class="nome-produto">Chia</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
@@ -130,35 +155,35 @@
       </div>
       <div class="itens-produtos">
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-6.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 72-6.png" alt="Baiano">
+          <p class="nome-produto">Baiano</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-7.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 72-7.png" alt="Orégano">
+          <p class="nome-produto">Orégano</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-8.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 72-8.png" alt="Pimenta do reino">
+          <p class="nome-produto">Pimenta do reino</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-9.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 72-9.png" alt="Alecrim">
+          <p class="nome-produto">Alecrim</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/oregano.png" alt="">
+          <img class="item-produto-img" src="../assets/img/image 72.png" alt="Chimichirri">
           <p class="nome-produto">Chimichurri</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
@@ -168,39 +193,42 @@
 
 
       <!--ERVAS AROMÁTICAS-->
-      <h2 style="margin:80px 0px 0px 50px;">Ervas aromáticas</h2>
+      <div class="texto-editar">
+        <h2>Ervas aromáticas</h2>
+        <a href="#">Editar</a>
+      </div>
       <div class="itens-produtos">
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/73.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/73.png" alt="Coentro">
+          <p class="nome-produto">Coentro</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-2.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 73-2.png" alt="Salsinha">
+          <p class="nome-produto">Salsinha</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-3.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 73-3.png" alt="Cebolinha">
+          <p class="nome-produto">Cebolinha</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-4.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 73-4.png" alt="Hortelã">
+          <p class="nome-produto">Hortelã</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-5.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 73-5.png" alt="Tomilho">
+          <p class="nome-produto">Tomilho</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
@@ -208,114 +236,120 @@
       </div>
       <div class="itens-produtos">
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-1.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 73-1.png" alt="Arruda">
+          <p class="nome-produto">Arruda</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-6.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 73-6.png" alt="Louro">
+          <p class="nome-produto">Louro</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-7.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 73-7.png" alt="Sálvio>
+          <p class="nome-produto">Sálvio</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-8.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 73-8.png" alt="Alecrim">
+          <p class="nome-produto">Alecrim</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-9.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 73-9.png" alt="Manjericão">
+          <p class="nome-produto">Manjericão</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
       </div>
       <!--PIMENTAS-->
-      <h2 style="margin:80px 0px 0px 50px;">Pimentas</h2>
+      <div class="texto-editar">
+        <h2>Pimentas</h2>
+        <a href="#">Editar</a>
+      </div>
       <div class="itens-produtos">
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 74.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 74.png" alt="Dedo de moça">
+          <p class="nome-produto">Dedo de moça</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 74-2.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 74-2.png" alt="Cheiro">
+          <p class="nome-produto">Cheiro</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 74-3.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 74-3.png" alt="Jalapeño">
+          <p class="nome-produto">Jalapeño</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 74-4.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 74-4.png" alt="Biquinho">
+          <p class="nome-produto">Biquinho</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 74-1.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 74-1.png" alt="Malagueta">
+          <p class="nome-produto">Malagueta</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
       </div>
       <!--  OUTROS-->
-      <h2 style="margin:80px 0px 0px 50px;">Outros</h2>
+      <div class="texto-editar">
+        <h2>Outros</h2>
+        <a href="#">Editar</a>
+      </div>
       <div class="itens-produtos">
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/75.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/75.png" alt="Alho">
+          <p class="nome-produto">Alho</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 75-2.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 75-2.png" alt="Cebola">
+          <p class="nome-produto">Cebola</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 75-3.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 75-3.png" alt="Cebola Roxa">
+          <p class="nome-produto">Cebola Roxa</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 75-4.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 75-4.png" alt="Batata">
+          <p class="nome-produto">Batata</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 75-1.png" alt="">
-          <p class="nome-produto">Chimichurri</p>
+          <img class="item-produto-img" src="../assets/img/image 75-1.png" alt="Limão">
+          <p class="nome-produto">Limão cravo</p>
           <p class="quantidade">100 Grama de Tempero</p>
           <p> R$ 7,00</p>
           <button class="button">Adicionar</button>
@@ -342,117 +376,80 @@
 
     <!-- Modal Política de Privacidade -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">POLÍTICA DE PRIVACIDADE</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>
-                    <b>TERMOS DE SERVIÇO E POLÍTICA DE PRIVACIDADE POLÍTICA DE PRIVACIDADE DO FEIRAQUI</b>
-                    <br>
-                    Todas as suas informações pessoais recolhidas, serão usadas para o ajudar a tornar a sua
-                    visita no nosso
-                    site o mais produtiva e agradável possível. <br><br>
-                    A garantia da confidencialidade dos dados pessoais dos utilizadores do nosso site é
-                    importante para o
-                    FEIRAQUI. <br><br>
-                    Todas as informações pessoais relativas a membros, assinantes, clientes ou visitantes
-                    que
-                    usem o FEIRAQUI
-                    serão tratadas em concordância com a Lei da Proteção de Dados Pessoais de 26 de outubro
-                    de
-                    1998 (Lei n.º
-                    67/98). <br><br>
-                    A informação pessoal recolhida pode incluir o seu nome, e-mail, número de telefone e/ou
-                    telemóvel, morada,
-                    data de nascimento e/ou outros. <br><br>
-                    O uso do FEIRAQUI pressupõe a aceitação deste Acordo de privacidade. A equipa do
-                    FEIRAQUI
-                    reserva-se ao
-                    direito de alterar este acordo sem aviso prévio. Deste modo, recomendamos que consulte a
-                    nossa política de
-                    privacidade com regularidade de forma a estar sempre atualizado. <br><br>
-                    <b>OS ANÚNCIOS</b><br><br>
-                    Tal como outros websites, coletamos e utilizamos informação contida nos anúncios. A
-                    informação contida nos
-                    anúncios, inclui o seu endereço IP (Internet Protocol), o seu ISP (Internet Service
-                    Provider, como o Sapo,
-                    Clix, ou outro), o browser que utilizou ao visitar o nosso website (como o Internet
-                    Explorer
-                    ou Google
-                    Chrome), o tempo da sua visita e que páginas visitou dentro do nosso website. <br><br>
-                    <b>OS COOKIES E WEB BEACONS</b><br><br>
-                    Utilizamos cookies para armazenar informação, tais como as suas preferências pessoas
-                    quando
-                    visita o nosso
-                    website. Isto poderá incluir um simples popup, ou uma ligação em vários serviços que
-                    providenciamos, tais
-                    como fóruns. <br><br>
-                    Em adição também utilizamos publicidade de terceiros no nosso website para suportar os
-                    custos de
-                    manutenção. Alguns destes publicitários, poderão utilizar tecnologias como os cookies
-                    e/ou
-                    web beacons
-                    quando publicitam no nosso website, o que fará com que esses publicitários (como o
-                    Google
-                    através do
-                    Google AdSense) também recebam a sua informação pessoal, como o endereço IP, o seu ISP,
-                    o
-                    seu browser,
-                    etc. Esta função é geralmente utilizada para geotargeting (mostrar publicidade de Lisboa
-                    apenas aos
-                    leitores oriundos de Lisboa por ex.) ou apresentar publicidade direcionada a um tipo de
-                    utilizador (como
-                    mostrar publicidade de restaurante a um utilizador que visita sites de culinária
-                    regularmente, por ex.).
-                    <br><br>
-                    Você detém o poder de desligar os seus cookies, nas opções do seu browser, ou efetuando
-                    alterações nas
-                    ferramentas de programas Anti-Virus, como o Norton Internet Security. No entanto, isso
-                    poderá alterar a
-                    forma como interage com o nosso website, ou outros websites. Isso poderá afetar ou não
-                    permitir que faça
-                    logins em programas, sites ou fóruns da nossa e de outras redes. <br><br>
-                    <b>LIGAÇÕES A SITES DE TERCEIROS</b><br><br>
-                    FEIRAQUI possui ligações para outros sites, os quais, a nosso ver, podem conter
-                    informações
-                    / ferramentas
-                    úteis para os nossos visitantes. A nossa política de privacidade não é aplicada a sites
-                    de
-                    terceiros, pelo
-                    que, caso visite outro site a partir do nosso deverá ler a politica de privacidade do
-                    mesmo.
-                    Não nos responsabilizamos pela política de privacidade ou conteúdo presente nesses
-                    mesmos
-                    sites.
-                </p>
-            </div>
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">POLÍTICA DE PRIVACIDADE</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <b>TERMOS DE SERVIÇO E POLÍTICA DE PRIVACIDADE POLÍTICA DE PRIVACIDADE DO FEIRAQUI</b> <br>
+              Todas as suas informações pessoais recolhidas, serão usadas para o ajudar a tornar a sua visita no nosso
+              site o mais produtiva e agradável possível. <br><br>
+              A garantia da confidencialidade dos dados pessoais dos utilizadores do nosso site é importante para o
+              FEIRAQUI. <br><br>
+              Todas as informações pessoais relativas a membros, assinantes, clientes ou visitantes que usem o FEIRAQUI
+              serão tratadas em concordância com a Lei da Proteção de Dados Pessoais de 26 de outubro de 1998 (Lei n.º
+              67/98). <br><br>
+              A informação pessoal recolhida pode incluir o seu nome, e-mail, número de telefone e/ou telemóvel, morada,
+              data de nascimento e/ou outros. <br><br>
+              O uso do FEIRAQUI pressupõe a aceitação deste Acordo de privacidade. A equipa do FEIRAQUI reserva-se ao
+              direito de alterar este acordo sem aviso prévio. Deste modo, recomendamos que consulte a nossa política de
+              privacidade com regularidade de forma a estar sempre atualizado. <br><br>
+              <b>OS ANÚNCIOS</b><br><br>
+              Tal como outros websites, coletamos e utilizamos informação contida nos anúncios. A informação contida nos
+              anúncios, inclui o seu endereço IP (Internet Protocol), o seu ISP (Internet Service Provider, como o Sapo,
+              Clix, ou outro), o browser que utilizou ao visitar o nosso website (como o Internet Explorer ou Google
+              Chrome), o tempo da sua visita e que páginas visitou dentro do nosso website. <br><br>
+              <b>OS COOKIES E WEB BEACONS</b><br><br>
+              Utilizamos cookies para armazenar informação, tais como as suas preferências pessoas quando visita o nosso
+              website. Isto poderá incluir um simples popup, ou uma ligação em vários serviços que providenciamos, tais
+              como fóruns. <br><br>
+              Em adição também utilizamos publicidade de terceiros no nosso website para suportar os custos de
+              manutenção. Alguns destes publicitários, poderão utilizar tecnologias como os cookies e/ou web beacons
+              quando publicitam no nosso website, o que fará com que esses publicitários (como o Google através do
+              Google AdSense) também recebam a sua informação pessoal, como o endereço IP, o seu ISP, o seu browser,
+              etc. Esta função é geralmente utilizada para geotargeting (mostrar publicidade de Lisboa apenas aos
+              leitores oriundos de Lisboa por ex.) ou apresentar publicidade direcionada a um tipo de utilizador (como
+              mostrar publicidade de restaurante a um utilizador que visita sites de culinária regularmente, por ex.).
+              <br><br>
+              Você detém o poder de desligar os seus cookies, nas opções do seu browser, ou efetuando alterações nas
+              ferramentas de programas Anti-Virus, como o Norton Internet Security. No entanto, isso poderá alterar a
+              forma como interage com o nosso website, ou outros websites. Isso poderá afetar ou não permitir que faça
+              logins em programas, sites ou fóruns da nossa e de outras redes. <br><br>
+              <b>LIGAÇÕES A SITES DE TERCEIROS</b><br><br>
+              FEIRAQUI possui ligações para outros sites, os quais, a nosso ver, podem conter informações / ferramentas
+              úteis para os nossos visitantes. A nossa política de privacidade não é aplicada a sites de terceiros, pelo
+              que, caso visite outro site a partir do nosso deverá ler a politica de privacidade do mesmo.
+              Não nos responsabilizamos pela política de privacidade ou conteúdo presente nesses mesmos sites.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<div class="modal fade" id="formasPagamento" data-bs-backdrop="static" data-bs-keyboard="false"
-    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
+    <!--MODAL FORMAS DE PAGAMENTO-->
+    <div class="modal fade" id="formasPagamento" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">FORMAS DE PAGAMENTO</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img src="../assets/img/image 39.png" alt="">
-                <img src="../assets/img/image 40.png" alt="">
-                <img src="../assets/img/image 42.png" alt="">
-                <img src="../assets/img/image 45.png" alt="">
-                <img src="../assets/img/image 43.png" alt="">
-                <img src="../assets/img/image 47.png" alt="">
-            </div>
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">FORMAS DE PAGAMENTO</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="../assets/img/image 39.png" alt="">
+            <img src="../assets/img/image 40.png" alt="">
+            <img src="../assets/img/image 42.png" alt="">
+            <img src="../assets/img/image 45.png" alt="">
+            <img src="../assets/img/image 43.png" alt="">
+            <img src="../assets/img/image 47.png" alt="">
+          </div>
         </div>
+      </div>
     </div>
-</div>
-</div>
+  </div>
 
   <!--LINKS JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -1,6 +1,6 @@
 /* INTEGRAÇÃO BACK-END */
 
-const formulario = document.querySelector("form");
+const formulario = document.querySelector("for");
 
 const inomeFregues = document.querySelector("#nomeFregues");
 const iemailFregues = document.querySelector("#emailFregues");
