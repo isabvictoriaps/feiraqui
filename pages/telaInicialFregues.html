@@ -126,7 +126,7 @@
       <div class="circulo2">
         <img src="../assets/img/Ellipse 16.png" alt="circulo da decoração do carrinho">
       </div>
-      <button class="finalizarPedido">Finalizar pedido</button>
+      <a href="finalizarPedido.html"><button class="finalizarPedido">Finalizar pedido</button></a>
     </div>
 
     <!--Perfil Fregues-->
@@ -143,7 +143,7 @@
         </div>
       </div>
       <div class="links-perfil">
-        <a href=""><i class="bi bi-list-ul"></i> Categorias</a>
+        <a href="categorias.html"><i class="bi bi-list-ul"></i> Categorias</a>
         <a href="meuPerfilFregues.html"><i class="bi bi-person-circle"></i>Meu perfil</a>
         <a href=""><i class="bi bi-bicycle"></i>Painel entregador</a>
         <a href=""><i class="bi bi-shop"></i>Painel feirante</a>
@@ -279,6 +279,7 @@
             <p class="nome-produto">Abacaxi</p>
             <p class="quantidade">Unidade</p>
             <p> <span>R$6,00</span> R$ 3,99</p>
+            <p class="quantidade">Barraca da Andreia</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
           <div class="item-produto">
@@ -286,6 +287,7 @@
             <p class="nome-produto">Maçã</p>
             <p class="quantidade">1 Kg</p>
             <p> <span>R$6,00</span> R$ 3,99</p>
+            <p class="quantidade">Barraca da Andreia</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
           <div class="item-produto">
@@ -293,6 +295,7 @@
             <p class="nome-produto">Alface</p>
             <p class="quantidade">Pé</p>
             <p> <span>R$6,00</span> R$ 3,99</p>
+            <p class="quantidade">Barraca da Andreia</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
           <div class="item-produto">
@@ -300,6 +303,7 @@
             <p class="nome-produto">Morango</p>
             <p class="quantidade">Bandeija com aprox. 250g</p>
             <p> <span>R$11,99</span> R$ 8,99</p>
+            <p class="quantidade">Barraca da Andreia</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
           <div class="item-produto">
@@ -307,6 +311,7 @@
             <p class="nome-produto">Agrião</p>
             <p class="quantidade">Dúzia</p>
             <p> <span>R$6,00</span> R$ 3,99</p>
+            <p class="quantidade">Barraca da Lucia</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
         </div>
@@ -329,9 +334,9 @@
           <div class="item-produto">
             <img src="../assets/img/peixe.png" alt="peixe">
             <p class="nome-produto">Peixe</p>
-            <p>Barraca do Rê</p>
             <p class="quantidade">Kg</p>
             <p> R$ 3,99</p>
+            <p class="quantidade">Barraca do Cowby</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
           <div class="item-produto">
@@ -339,6 +344,7 @@
             <p class="nome-produto">Pastel</p>
             <p class="quantidade">Unidade</p>
             <p>R$ 3,99</p>
+            <p class="quantidade">Barraca da Simone</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
           <div class="item-produto">
@@ -346,6 +352,7 @@
             <p class="nome-produto">Melancia</p>
             <p class="quantidade">Unidade</p>
             <p>R$ 3,99</p>
+            <p class="quantidade">Barraca da Andreia</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
           <div class="item-produto">
@@ -353,6 +360,7 @@
             <p class="nome-produto">Kiwi</p>
             <p class="quantidade">Kg</p>
             <p>R$ 10,00</p>
+            <p class="quantidade">Barraca da Andreia</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
           <div class="item-produto">
@@ -360,6 +368,7 @@
             <p class="nome-produto">Laranja</p>
             <p class="quantidade">Dúzia</p>
             <p> R$ 8,99</p>
+            <p class="quantidade">Barraca da Andreia</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
           <div class="item-produto">
@@ -367,6 +376,7 @@
             <p class="nome-produto">Alface</p>
             <p class="quantidade">Pé</p>
             <p> R$ 3,99</p>
+            <p class="quantidade">Barraca da Vivi</p>
             <button class="button" onclick="alert();">Adicionar</button>
           </div>
         </div>
@@ -390,7 +400,8 @@
         <div class="input-group">
           <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="Input group example"
             aria-describedby="btnGroupAddon2">
-          <div class="input-group-text" id="btnGroupAddon2"><i class="fa-solid fa-magnifying-glass icon-search"></i>
+            <button class="input-group-text" id="btnGroupAddon2" onclick="feirasProximas();"><i class="fa-solid fa-magnifying-glass icon-search"></i>
+            </button>
           </div>
         </div>
       </div>

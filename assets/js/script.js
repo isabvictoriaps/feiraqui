@@ -36,47 +36,69 @@ document.querySelector("#botao-perfilFeirante").onclick = () => {
 };
 
 // document.getElementById('adicionarcart').addEventListener('click', function () {
-  function alert() {
-    Swal.fire({
-        position: '',
-        icon: 'success',
-        title: '<p class="alert">Foi adicionado ao carrinho</p>',
-        showConfirmButton: false,
-        timer: 1200,
-        timerProgressBar: true,
-        width: '250px',
-        // padding: '15px 15px',
-        // toast: 'true',
-        background: '#fff',
-        position: ''
-    });
-};
+function alert() {
+  Swal.fire({
+    position: "",
+    icon: "success",
+    title: '<p class="alert">Foi adicionado ao carrinho</p>',
+    showConfirmButton: false,
+    timer: 1200,
+    timerProgressBar: true,
+    width: "250px",
+    // padding: '15px 15px',
+    // toast: 'true',
+    background: "#fff",
+    position: "",
+  });
+}
 function breve() {
-    Swal.fire({
-        title: '<p class="breve">Sistema em manutenção</p>',
-        text: 'Pedimos desculpas pelo inconveniente, mas o sistema esta em manutenção',
-        showConfirmButton: true,
-        // timer: 1200,
-        // timerProgressBar: true,
-        width: '400px',
-        background: '#fff',
-        position: '',
-        imageUrl: '../assets/img/manutencao.png',
-        imageWidth: '70%'
-    });
-};
+  Swal.fire({
+    title: '<p class="breve">Sistema em manutenção</p>',
+    text: "Pedimos desculpas pelo inconveniente, mas o sistema esta em manutenção",
+    showConfirmButton: true,
+    // timer: 1200,
+    // timerProgressBar: true,
+    width: "400px",
+    background: "#fff",
+    position: "",
+    imageUrl: "../assets/img/manutencao.png",
+    imageWidth: "70%",
+  });
+}
 
 function semBarraca() {
   Swal.fire({
-      title: '<p class="breve">Não há barracas!</p>',
-      text: 'Pedimos desculpas pelo inconveniente, mas por enquanto não há barracas para essa categoria',
-      showConfirmButton: true,
-      // timer: 1200,
-      // timerProgressBar: true,
-      width: '400px',
-      background: '#fff',
-      position: '',
-      imageUrl: '../assets/img/Frame (1).png',
-      imageWidth: '70%'
+    title: '<p class="breve">Não há barracas!</p>',
+    text: "Pedimos desculpas pelo inconveniente, mas por enquanto não há barracas para essa categoria",
+    showConfirmButton: true,
+    // timer: 1200,
+    // timerProgressBar: true,
+    width: "400px",
+    background: "#fff",
+    position: "",
+    imageUrl: "../assets/img/Frame (1).png",
+    imageWidth: "70%",
   });
-};
+}
+
+// Limpar input quando pesquisar feira próxima
+
+function limpar() {
+  inputFeira = document.querySelector(".form-control");
+  inputFeira.value = "";
+}
+
+function feirasProximas() {
+  Swal.fire({
+    title:
+      '<p class="breve">AVENIDA ANTARTICA, 27 <br> R. ANA PIMENTEL A MELO PALHETA, 286 <br> RUA AURELIA, 510 <br> PC ROCHA FALCAO, 21</p>',
+    text: "FEIRAS PRÓXIMAS A SUA CASA",
+    showConfirmButton: true,
+    width: "500px",
+    background: "#fff",
+    position: "",
+    imageUrl: "../assets/img/feiras proximas.png",
+    imageWidth: "100%",
+  });
+  limpar();
+}

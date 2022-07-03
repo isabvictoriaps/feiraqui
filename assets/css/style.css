@@ -2086,4 +2086,5 @@ input:checked+.slider:before {
 }
 .breve{
     text-transform: uppercase;
+    font-size: 20px;
 }
