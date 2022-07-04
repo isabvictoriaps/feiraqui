@@ -1,6 +1,3 @@
-/*NAVBAR*/
-
-/*PESQUISAR*/
 let searchForm = document.querySelector(".search-form");
 
 document.querySelector("#search-btn").onclick = () => {
@@ -8,7 +5,7 @@ document.querySelector("#search-btn").onclick = () => {
   searchForm.classList.toggle("active");
 };
 
-/* MEU CARRINHO */
+// MEU CARRINHO
 
 let carrinhoDiv = document.querySelector(".carrinhoFregues");
 
@@ -28,14 +25,14 @@ document.querySelector("#botao-perfil").onclick = () => {
 
 /* MEU PERFIL - FEIRANTE */
 
-var perfilFeiranteDiv = document.querySelector(".perfilFeirante");
+var perfilFeiranteActive = document.querySelector(".perfilFeirante");
 
-document.querySelector("#botao-perfilFeirante").onclick = () => {
+document.querySelector("#feira").onclick = () => {
   console.log("oi");
-  perfilFeiranteDiv.classList.toggle("active");
+  perfilFeiranteActive.classList.toggle("active");
 };
 
-// document.getElementById('adicionarcart').addEventListener('click', function () {
+// Alerta quando adicionar algo ao carrinho
 function alert() {
   Swal.fire({
     position: "",
@@ -45,8 +42,6 @@ function alert() {
     timer: 1200,
     timerProgressBar: true,
     width: "250px",
-    // padding: '15px 15px',
-    // toast: 'true',
     background: "#fff",
     position: "",
   });
@@ -56,8 +51,6 @@ function breve() {
     title: '<p class="breve">Sistema em manutenção</p>',
     text: "Pedimos desculpas pelo inconveniente, mas o sistema esta em manutenção",
     showConfirmButton: true,
-    // timer: 1200,
-    // timerProgressBar: true,
     width: "400px",
     background: "#fff",
     position: "",
@@ -71,13 +64,26 @@ function semBarraca() {
     title: '<p class="breve">Não há barracas!</p>',
     text: "Pedimos desculpas pelo inconveniente, mas por enquanto não há barracas para essa categoria",
     showConfirmButton: true,
-    // timer: 1200,
-    // timerProgressBar: true,
     width: "400px",
     background: "#fff",
     position: "",
     imageUrl: "../assets/img/Frame (1).png",
     imageWidth: "70%",
+  });
+}
+
+// Instrucoes
+
+function instrucoes() {
+  Swal.fire({
+    title: "<p>FeiraMaps - Instrução</p>",
+    text: "Clique no botão abaixo de pesquisa, você será redirecionado ao nosso mapa. Em seguida, clique no botão de lupa indicado na imagem acima e adicione seu endereço/cep. Prontinho, depois disso, você terá acesso às feiras mais próximas!",
+    showConfirmButton: true,
+    width: "800px",
+    background: "#fff",
+    position: "",
+    imageUrl: "../assets/img/instrucoes.jpg",
+    imageWidth: "100%",
   });
 }
 

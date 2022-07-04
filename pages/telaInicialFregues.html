@@ -34,7 +34,8 @@
   <!--NAVBAR-->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="../assets/img/Logo_feiraqui.png" alt="Logomarca laranja do feira aqui"></a>
+      <a class="navbar-brand" href="#"><img src="../assets/img/Logo_feiraqui.png"
+          alt="Logomarca laranja do feira aqui"></a>
       <div class="collapse navbar-collapse itens-nav row">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
@@ -53,7 +54,8 @@
             <a class="nav-link" href="contato.html">CONTATO</a>
           </li>
           <li>
-            <a class="nav-link" id="darkmode-icon"><button id="toggle"><i class="fa-solid fa-moon" id="toggle-icon"></i></button></a>
+            <a class="nav-link" id="darkmode-icon"><button id="toggle"><i class="fa-solid fa-moon"
+                  id="toggle-icon"></i></button></a>
           </li>
         </ul>
       </div>
@@ -387,23 +389,20 @@
   <div class="section_feiras" id="feiras">
     <div class="feirasproximas">
       <div class="mapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8820296548174!2d-46.62463458509945!3d-23.536745084695124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58fad5ac6167%3A0x9c010cd1bdb62d11!2sFeira%20do%20Br%C3%A1s!5e0!3m2!1spt-BR!2sbr!4v1653500957152!5m2!1spt-BR!2sbr"
-          width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1ql8xj8onExBtwCjL6XUsG40dBgi_urA&hl=pt-BR&ehbc=2E312F"
+          width="600" height="400"></iframe>
       </div>
       <div class="add-cep">
         <h3 class="titulo-feira">FEIRAS PRÓXIMAS A VOCÊ</h3> <br>
         <P class="descricao_feira">COM O FEIRAQUI VOCÊ ENCONTRA AS <br>
-          FEIRAS MAIS PERTINHAS DE VOCÊ EM APENAS <br>
-          UM CLIQUE!</P> <br>
+          FEIRAS MAIS PERTINHAS DE VOCÊ EM POUCOS <br>
+          CLIQUES!</P> <br>
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Digite seu CEP" aria-label="Input group example"
-            aria-describedby="btnGroupAddon2">
-            <button class="input-group-text" id="btnGroupAddon2" onclick="feirasProximas();"><i class="fa-solid fa-magnifying-glass icon-search"></i>
-            </button>
-          </div>
+          <a class="button-feiraProxima"
+            href="https://www.google.com/maps/d/viewer?mid=1ql8xj8onExBtwCjL6XUsG40dBgi_urA&hl=pt-BR&ll=-23.504491671876757%2C-46.385128735595245&z=16"
+            target="_blank">PESQUISAR FEIRA PRÓXIMA</a>
         </div>
+        <button class="instrucoes-maps" id="btnGroupAddon2" onclick="instrucoes();">Instruções</button>
       </div>
     </div>
   </div>

@@ -1,0 +1,108 @@
+/*RESPONSIVIDADE index*/
+
+@media screen and (min-width: 830px) and (max-width: 1230px) {
+    .navbar-nav {
+        margin-left: 10px;
+    }
+
+    .app_preview {
+        flex-direction: column;
+        height: 800px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imagem_preview {
+        width: 90%;
+    }
+
+    .item-categoria {
+        font-size: 20px;
+    }
+
+    .item-categoria img {
+        width: 70%;
+
+    }
+
+    .item-produto img {
+        width: 50%;
+    }
+
+    .feirasproximas {
+        flex-direction: row;
+        height: 500px;
+        justify-content: space-around;
+    }
+
+    .add-cep {
+        font-size: 50%;
+        margin: 50px;
+    }
+
+    iframe{
+        width: 300px;
+        height: 400px;
+        margin-left: -50px;
+    }
+
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 830px) {
+    .navbar-nav {
+        margin-left: 10px;
+    }
+
+    .app_preview {
+        flex-direction: column;
+        height: 800px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .imagem_preview {
+        width: 90%;
+    }
+
+    .item-categoria {
+        font-size: 20px;
+    }
+
+    .itens_categorias {
+        flex-direction: column;
+    }
+
+    .itens-produtos{
+      flex-direction: column;  
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .item-produto{
+        width: 50%;
+    }
+
+    .feirasproximas {
+        flex-direction: row;
+        height: 300px;
+        justify-content: space-around;
+    }
+
+    .add-cep {
+        font-size: 50%;
+        margin: 50px;
+    }
+
+    iframe{
+        width: 150px;
+        height: 200px;
+        margin-left: -50px;
+    }
+
+    .footer p{
+        font-size: 10px;
+    }
+
+}

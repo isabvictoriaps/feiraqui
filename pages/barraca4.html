@@ -34,28 +34,37 @@
   <!--NAVBAR-->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="../assets/img/Logo_feiraqui.png" alt="Logomarca laranja do feira aqui"></a>
+      <a class="navbar-brand" href="#"><img src="../assets/img/Logo_feiraqui.png"
+          alt="Logomarca laranja do feira aqui"></a>
       <div class="collapse navbar-collapse itens-nav row">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link " href="telaInicialFeirante.html">MINHA BARRACA</a>
+            <a class="nav-link " href="telaInicialFregues.html">INÍCIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pedidos-feirante.html">PEDIDOS</a>
+            <a class="nav-link" href="#produtos">PRODUTOS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="vendas.html">VENDAS</a>
+            <a class="nav-link" href="#feiras">FEIRAS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contatoFeirante.html">CONTATO</a>
+            <a class="nav-link" href="sobreNos.html">SOBRE</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="darkmode-icon"><button id="toggle"><i class="fa-solid fa-moon" id="toggle-icon"></i></button></a>
+            <a class="nav-link" href="contato.html">CONTATO</a>
           </li>
         </ul>
       </div>
       <div class="icones">
-        <button class="botaoicon" id="botao-perfilFeirante"><i class=" fa-solid fa-circle-user"></i></button>
+        <button class="botaoicon" id="search-btn"><i class="bi bi-search"></i></button>
+
+        <button class="botaoicon" id="botaoCarrinho"><i class="bi bi-basket2-fill"></i></button>
+
+        <button class="botaoicon" id="botao-perfil"><i class=" fa-solid fa-circle-user"></i></button>
+      </div>
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="pesquise aqui...">
+        <label for="search-box" class="fas fa-search"></label>
       </div>
     </div>
 
@@ -86,23 +95,23 @@
   <section class="">
     <div>
       <img class="capa-feira" src="../assets/img/PHOTO-2022-05-04-21-19-49 1.png" alt="capa do perfil do feirante">
-      <div class="perfil-feirante"><img src="../assets/img/perfil-feirante.jpg" alt="foto de perfil - feirante"></div>
+      <div class="perfil-feirante"><img src="../assets/img/barraca8.png" alt="foto de perfil - feirante"></div>
     </div>
     <div>
       <div class="informacoes-principaisFeira">
         <div>
-          <h4>Dona Cida Temperos</h4>
-          <p>(ervas aromáticas - tempeiros - outros)</p>
+          <h4>Barraca da Andreia</h4>
+          <p>(Frutas)</p>
         </div>
         <div class="informacoesFeira-Feirante">
           <button class="buttonVerMaisFeirante">Ver mais </button>
-          <p>| Valor mínimo 10,00</p>
+          <p>| Valor mínimo 20,00</p>
         </div>
       </div>
     </div>
     <div class="area-pesquisa">
       <div class="adicionar-produto">
-        <a href="painelAdm.html"><i class="fa-solid fa-plus"></i>Adicionar produto</a>
+        <a href="todasBarracas.html">Voltar para as barracas</a>
       </div>
       <div class="search-feirante">
         <input class="input-search" type="text" name="" id="" placeholder="Busque aqui">
@@ -113,246 +122,81 @@
   <section class="produtos-feirante">
     <div class="div-produtosFeirante">
       <div class="texto-editar">
-        <h2>Temperos</h2>
+        <h2>Frutas</h2>
         <a href="#">Editar</a>
       </div>
       <div class="itens-produtos">
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-1.png" alt="Curry">
-          <p class="nome-produto">Curry</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
+          <img class="item-produto-img" src="../assets/img/abobrinha.png" alt="abobrinha">
+          <p class="nome-produto">Abobrinha</p>
+          <p class="quantidade">500g</p>
+          <p> R$ 10,98</p>
+          <button class="button" onclick="alert();">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-2.png" alt="Ana Maria">
-          <p class="nome-produto">Ana Maria</p>
-          <p class="quantidade">100 Grama de Tempero</p>
+          <img class="item-produto-img" src="../assets/img/alface.png" alt="Alface">
+          <p class="nome-produto">Alface</p>
+          <p class="quantidade">1 pé</p>
           <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
+          <button class="button" onclick="alert();">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-3.png" alt="Cebola em pó">
-          <p class="nome-produto">Cebola em pó</p>
-          <p class="quantidade">100 Grama de Tempero</p>
+          <img class="item-produto-img" src="../assets/img/berinjela.png" alt="berinjela">
+          <p class="nome-produto">berinjela</p>
+          <p class="quantidade">500g</p>
           <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
+          <button class="button" onclick="alert();">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-4.png" alt="Colorau">
-          <p class="nome-produto">Colorau</p>
-          <p class="quantidade">100 Grama de Tempero</p>
+          <img class="item-produto-img" src="../assets/img/batata-doce.png" alt="Batata doce">
+          <p class="nome-produto">Batata Doce</p>
+          <p class="quantidade">500g</p>
           <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
+          <button class="button" onclick="alert();">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-5.png" alt="Chia">
-          <p class="nome-produto">Chia</p>
-          <p class="quantidade">100 Grama de Tempero</p>
+          <img class="item-produto-img" src="../assets/img/brocolis.png" alt="Brócolis">
+          <p class="nome-produto">Brócolis</p>
+          <p class="quantidade">500g</p>
           <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
+          <button class="button" onclick="alert();">Adicionar</button>
         </div>
       </div>
       <div class="itens-produtos">
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-6.png" alt="Baiano">
-          <p class="nome-produto">Baiano</p>
-          <p class="quantidade">100 Grama de Tempero</p>
+          <img class="item-produto-img" src="../assets/img/beterraba.png" alt="Beterraba">
+          <p class="nome-produto">Beterraba</p>
+          <p class="quantidade">500 g</p>
           <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
+          <button class="button" onclick="alert();">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-7.png" alt="Orégano">
-          <p class="nome-produto">Orégano</p>
-          <p class="quantidade">100 Grama de Tempero</p>
+          <img class="item-produto-img" src="../assets/img/cenoura.png" alt="cenoura">
+          <p class="nome-produto">Cenoura</p>
+          <p class="quantidade">500 g</p>
           <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
+          <button class="button" onclick="alert();">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-8.png" alt="Pimenta do reino">
-          <p class="nome-produto">Pimenta do reino</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72-9.png" alt="Alecrim">
-          <p class="nome-produto">Alecrim</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 72.png" alt="Chimichirri">
-          <p class="nome-produto">Chimichurri</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-      </div>
-
-
-      <!--ERVAS AROMÁTICAS-->
-      <div class="texto-editar">
-        <h2>Ervas aromáticas</h2>
-        <a href="#">Editar</a>
-      </div>
-      <div class="itens-produtos">
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/73.png" alt="Coentro">
-          <p class="nome-produto">Coentro</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-2.png" alt="Salsinha">
-          <p class="nome-produto">Salsinha</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-3.png" alt="Cebolinha">
+          <img class="item-produto-img" src="../assets/img/cebolinha.png" alt="Cebolinha">
           <p class="nome-produto">Cebolinha</p>
-          <p class="quantidade">100 Grama de Tempero</p>
+          <p class="quantidade">500 g</p>
           <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
+          <button class="button" onclick="alert();">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-4.png" alt="Hortelã">
-          <p class="nome-produto">Hortelã</p>
-          <p class="quantidade">100 Grama de Tempero</p>
+          <img class="item-produto-img" src="../assets/img/couve-flor.png" alt="Couve-flor">
+          <p class="nome-produto">Couve-flor</p>
+          <p class="quantidade">500 g</p>
           <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
+          <button class="button" onclick="alert();">Adicionar</button>
         </div>
         <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-5.png" alt="Tomilho">
-          <p class="nome-produto">Tomilho</p>
-          <p class="quantidade">100 Grama de Tempero</p>
+          <img class="item-produto-img" src="../assets/img/kiwi.png" alt="Agrião">
+          <p class="nome-produto">Agrião</p>
+          <p class="quantidade">500 g</p>
           <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-      </div>
-      <div class="itens-produtos">
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-1.png" alt="Arruda">
-          <p class="nome-produto">Arruda</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-6.png" alt="Louro">
-          <p class="nome-produto">Louro</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-7.png" alt="Sálvio>
-          <p class="nome-produto">Sálvio</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-8.png" alt="Alecrim">
-          <p class="nome-produto">Alecrim</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 73-9.png" alt="Manjericão">
-          <p class="nome-produto">Manjericão</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-      </div>
-      <!--PIMENTAS-->
-      <div class="texto-editar">
-        <h2>Pimentas</h2>
-        <a href="#">Editar</a>
-      </div>
-      <div class="itens-produtos">
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 74.png" alt="Dedo de moça">
-          <p class="nome-produto">Dedo de moça</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 74-2.png" alt="Cheiro">
-          <p class="nome-produto">Cheiro</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 74-3.png" alt="Jalapeño">
-          <p class="nome-produto">Jalapeño</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 74-4.png" alt="Biquinho">
-          <p class="nome-produto">Biquinho</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 74-1.png" alt="Malagueta">
-          <p class="nome-produto">Malagueta</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-      </div>
-      <!--  OUTROS-->
-      <div class="texto-editar">
-        <h2>Outros</h2>
-        <a href="#">Editar</a>
-      </div>
-      <div class="itens-produtos">
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/75.png" alt="Alho">
-          <p class="nome-produto">Alho</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 75-2.png" alt="Cebola">
-          <p class="nome-produto">Cebola</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 75-3.png" alt="Cebola Roxa">
-          <p class="nome-produto">Cebola Roxa</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 75-4.png" alt="Batata">
-          <p class="nome-produto">Batata</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
-        </div>
-        <div class="item-produto-feirante">
-          <img class="item-produto-img" src="../assets/img/image 75-1.png" alt="Limão">
-          <p class="nome-produto">Limão cravo</p>
-          <p class="quantidade">100 Grama de Tempero</p>
-          <p> R$ 7,00</p>
-          <button class="button">Adicionar</button>
+          <button class="button" onclick="alert();">Adicionar</button>
         </div>
       </div>
     </div>
@@ -456,7 +300,8 @@
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
   <script src="../assets/js/script.js"></script>
-  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/swiper-bundle.min.js"></script>
+  <script src="../assets/js/sweetalert2.all.min.js"></script>
   <script src="../assets/js/darkmode.js"></script>
 </body>
 
