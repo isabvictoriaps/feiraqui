@@ -82,7 +82,7 @@ function instrucoes() {
     width: "800px",
     background: "#fff",
     position: "",
-    imageUrl: "../assets/img/instrucoes.jpg",
+    imageUrl: "../assets/img/instrucoes.png",
     imageWidth: "100%",
   });
 }
