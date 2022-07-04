@@ -1,5 +1,5 @@
 const html = document.querySelector("html")
-const toggle = document.querySelector("#toggle")
+const checkbox = document.querySelector("input")
 
 const getStyle = (html, variavelCSS) => 
     window.getComputedStyle(html).getPropertyValue(variavelCSS)
@@ -34,8 +34,6 @@ const changeIcon = () => {
 
 let ligado = false
 
-toggle.addEventListener("click", () => {
-    ligado = !ligado
-    changeIcon()
-    ligado ? changeColors(darkMode) : changeColors(initialColors)
+checkbox.addEventListener("change", ({target}) => {
+    target.checked ? changeColors(darkMode) : changeColors(initialColors)
 })

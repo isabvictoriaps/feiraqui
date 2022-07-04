@@ -13,7 +13,7 @@
 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0;  
+    margin: 0;
 }
 
 input:focus {
@@ -41,13 +41,13 @@ input:focus {
 .body,
 .login-body,
 .index-body,
-.cadastro-body, 
-.cadastroEntregador-body, 
-.barraca-body, 
-.cadastroFeirante-body, 
-.cadastroFregues-body, 
-.contato-body, 
-.finalizarPedido-body, 
+.cadastro-body,
+.cadastroEntregador-body,
+.barraca-body,
+.cadastroFeirante-body,
+.cadastroFregues-body,
+.contato-body,
+.finalizarPedido-body,
 .meuPerfilFregues,
 .painelADM-body,
 .pedidosFeirantes-body {
@@ -115,10 +115,60 @@ i:hover {
     transform: scale(0.8);
 }
 
-.botaoicon, #toggle {
+.botaoicon {
     border: none !important;
     background-color: transparent;
 }
+
+#darkButton {
+    margin-top: 5px;
+    background-color: #000;
+    height: 35px;
+    width: 40px;
+    border-radius: 12px;
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  #switchLabel {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 30px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 100px;
+    position: relative;
+  }
+
+  #switchLabel::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 90px;
+    transition: 0.2s;
+  }
+
+  input:checked + #switchLabel::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+
+  #switchLabel:active:after {
+    width: 24px;
+  }
 
 .search-form {
     position: absolute;
@@ -126,7 +176,7 @@ i:hover {
     right: 23%;
     background-color: var(--body);
     color: #333;
-    width: 700px;
+    width: 800px;
     height: 50px;
     border: 2px solid var(--main);
     border-radius: 10px;
@@ -371,9 +421,25 @@ p span {
     text-align: center;
 }
 
+.input-group input{
+    height: 40px;
+}
+
 div .input-group-text {
     background-color: var(--main);
-    height: 52px;
+    height:40px;
+}
+
+.button-feiraProxima{
+    color: #fff !important;
+    text-decoration: none;
+    background-color: var(--main);
+    height: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
 
 /*SOBRE NÓS*/
@@ -457,9 +523,10 @@ div .input-group-text {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
-.meuPerfilFregues-body .footer{
+.meuPerfilFregues-body .footer {
     margin-top: 0px;
 }
 
@@ -1103,10 +1170,11 @@ input[type="file"] {
     margin-bottom: 50px;
 }
 
-.entreEmContato h3 {
+.entreEmContato h2 {
     color: var(--main);
     margin-bottom: 50px;
     margin-top: 30px;
+    text-align: center;
 }
 
 .formContato {
@@ -1128,6 +1196,7 @@ input[type="file"] {
     border: 1px solid #848383;
     margin-top: 10px;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .inputContato label {
@@ -1290,7 +1359,7 @@ input[type="file"] {
 }
 
 .divFinalizar-pedido h4 {
-    color: #fff;
+    color: #FF8827;
     text-align: center;
     margin: 30px;
 }
@@ -1315,7 +1384,7 @@ input[type="file"] {
     margin: 0px 50px 0px 50px;
 }
 
-.divFinalizar-pedido form {
+.divFinalizar-pedido .form {
     background-color: var(--main);
     display: flex;
     flex-direction: row;
@@ -1324,7 +1393,7 @@ input[type="file"] {
     padding: 20px;
 }
 
-.divFinalizar-pedido form button {
+.divFinalizar-pedido .form button {
     background-color: #5FB800;
     border: none;
     color: #fff;
@@ -1362,6 +1431,8 @@ input[type="file"] {
     width: 420px;
     border: none;
     height: 40px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .validade-cvv {
@@ -1517,7 +1588,6 @@ input[type="file"] {
     top: 70px;
     border-radius: 0px 0px 20px 20px;
     transform: scaleY(0);
-    position: fixed;
 }
 
 .perfilFeirante.active {
@@ -1543,6 +1613,7 @@ input[type="file"] {
     background-color: transparent;
     color: var(--main);
     margin-bottom: 15px;
+    margin-right: px;
 }
 
 .informacoesFeira-Feirante {
@@ -1589,8 +1660,30 @@ input[type="file"] {
 .area-pesquisa {
     width: 93%;
     display: flex;
-    justify-content: end;
-    margin-top: 70px;
+    justify-content:space-between;
+    margin-top: 100px;
+}
+
+.adicionar-produto a{
+    background-color: #FF8827;
+    color: white;
+    padding: 15px 30px 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 200px;
+}
+
+.adicionar-produto a i{
+    color: white;
+    margin-right: 30px;
+}
+
+.adicionar-produto a:hover{
+    color: #fff;
+
 }
 
 .item-produto-img {
@@ -1605,7 +1698,7 @@ input[type="file"] {
     border-radius: 8px;
     border-radius: 6px;
     margin: 20px;
-    padding: 10px;
+    padding: 20px 10px;
     text-align: center;
     align-items: center;
     background-color: var(--body);
@@ -1645,6 +1738,7 @@ input[type="file"] {
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .nome-pedido {
@@ -1662,16 +1756,16 @@ input[type="file"] {
     justify-content: center;
 }
 
-.item-pedidos button {
+.finalizar {
     padding: 10px 40px;
     border-radius: 5px;
     border: none;
-    background-color: linear-gradient(92.29deg, rgba(250, 30, 35, 0.74) 0%, rgba(250, 30, 35, 0.76) 14.48%, rgba(250, 30, 35, 0.7) 24.36%, rgba(251, 55, 36, 0.7) 33.75%, rgba(253, 83, 37, 0.74) 46.94%, rgba(254, 110, 38, 0.83) 62.95%, rgba(255, 136, 39, 0.96) 75.16%, var(--main) 100%);
+    background: linear-gradient(92.29deg, rgba(250, 30, 35, 0.74) 0%, rgba(250, 30, 35, 0.76) 14.48%, rgba(250, 30, 35, 0.7) 24.36%, rgba(251, 55, 36, 0.7) 33.75%, rgba(253, 83, 37, 0.74) 46.94%, rgba(254, 110, 38, 0.83) 62.95%, rgba(255, 136, 39, 0.96) 75.16%, #FF8827 100%);
     width: 180px;
-    color: var(--text);
+    color: #fff;
 }
 
-.item-pedidos .pedido-finalizado {
+.pedido-finalizado {
     padding: 10px 40px;
     border-radius: 5px;
     border: none;
@@ -1681,11 +1775,395 @@ input[type="file"] {
     color: #fff;
 }
 
-.item-pedidos .pedido-entregue {
+.pedido-entregue {
     padding: 10px 40px;
     border-radius: 5px;
     border: none;
-    background-color: linear-gradient(272.02deg, #FFE000 0.25%, rgba(255, 209, 6, 0.9) 15.22%, rgba(255, 192, 14, 0.8) 29.76%, rgba(255, 184, 18, 0.918644) 44.31%, #FFB414 60.41%, rgba(255, 164, 27, 0.8) 74.96%, rgba(255, 150, 33, 0.9) 87.43%, var(--main) 100%);
+    background: linear-gradient(272.02deg, #FFE000 0.25%, rgba(255, 209, 6, 0.9) 15.22%, rgba(255, 192, 14, 0.8) 29.76%, rgba(255, 184, 18, 0.918644) 44.31%, #FFB414 60.41%, rgba(255, 164, 27, 0.8) 74.96%, rgba(255, 150, 33, 0.9) 87.43%, #FF8827 100%);
     width: 180px;
-    color: var(--text);
+    color: #fff;
+}
+
+/* ÁREA DE PEDIDOS */
+
+.pedido-visao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background: linear-gradient(103.11deg, #FA1E23 0%, rgba(251, 44, 36, 0.9) 13.02%, rgba(251, 58, 36, 0.8) 26.56%, rgba(254, 108, 38, 0.8) 73.44%, rgba(254, 123, 39, 0.9) 88.02%, #FF8827 100%);
+    border-radius: 12px;
+    height: 130px;
+    width: 300px;
+    color: #fff;
+}
+
+.item-visaoPedido {
+    display: flex;
+    gap: 150px;
+    margin-top: 50px;
+}
+
+.item-visaoPedido p {
+    text-align: center;
+}
+
+.linha-vertical-pedidos {
+    height: 90px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 0;
+}
+
+.grafico-vendas img {
+    width: 1000px;
+    margin-top: 50px;
+}
+
+/* CATEGORIAS */
+
+.categorias-section {
+    margin-top: 100px;
+}
+
+.categorias-section h2 {
+    color: #FF8827;
+    text-align: center;
+    font-size: 40px;
+}
+
+.cor-verde {
+    color: #5FB800;
+    margin-left: 10px;
+}
+
+.cor-laranja {
+    color: #FF8827;
+    font-size: 50px;
+}
+
+.categorias-itens {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.item-categoria-explorar {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    height: 250px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.item-categoria-explorar img {
+    transform: scale(0.8);
+}
+
+.item-categoria-explorar button{
+    background-color: transparent;
+}
+
+.item-categoria-explorar a{
+    color: #000;
+    text-decoration: none;
+}
+
+.item-categoria-explorar:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*Tela inicial - entregador*/
+
+.painel-feirante {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.label-online {
+    color: #868686;
+    font-size: 28px;
+}
+
+.informacao-entregador {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 200px;
+}
+
+.icon-online {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #33f321;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2eb30d;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.mapa-entregador {
+    transform: scale(0.8);
+}
+
+.linha-vertical {
+    width: 0px;
+    border: 0.5px solid rgb(0, 0, 0);
+    height: 100px;
+    margin: 0px 50px 0px 50px;
+}
+
+.valor-forma {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.informacoes-pedido-entregador {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes-pedido-entregador button {
+    margin-left: 720px;
+}
+
+.info-p {
+    font-size: 25px;
+}
+
+.proximas-entregas-entregador h2 {
+    text-align: center;
+    padding: 80px 0px;
+}
+
+
+.item-pedidos-entregador {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 400px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    gap: 20px;
+}
+
+.nome-pedido-entregador {
+    margin: 0px 50px 0px 30px;
+}
+
+.nome-pedido h3 {
+    margin-bottom: 40px;
+}
+
+.imagem-horario-entregador {
+    display: flex;
+    gap: 30px;
+}
+
+.imagem-horario-entregador img {
+    width: 130px;
+}
+
+.itens-pedidos-entregador {
+    display: flex;
+    gap: 10px;
+}
+
+.aceitar-corrida-entregador {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--body);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    gap: 20px;
+}
+
+.aceitar-corrida-entregador a{
+    color: #FF8827;
+    text-decoration: none;
+}
+
+.aceitar-entrega {
+    background-color: #FF8827;
+    color: #fff;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.localizacao-entrega{
+    display: flex;
+}
+
+.localizacao-entrega img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.entregafinalizada-pendente i{
+    color: #fff;
+    margin-right: 20px;
+}
+
+.desempenho-entregador{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.desempenho-entregador h2{
+    margin: 50px 0px;
+}
+
+.entregas-finalizadas-entregador{
+    background-color: #FF8827;
+    width: 1000px;
+    color: #fff;
+    display: flex;
+    height: 300px;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.linha-vertical-branca{
+    width: 0px;
+    border: 0.5px solid rgb(255, 255, 255);
+    height: 200px;
+}
+
+.valor-recebido-entregador{
+    text-align: center;
+}
+
+.entregafinalizada-pendente{
+    text-align: center;
+}
+
+.ver-historico{
+    width: 100%;
+    text-align: end;
+    padding-right: 260px;
+    margin-top: 10px;
+}
+
+.ver-historico a{
+    text-decoration: none;
+    color: #FF8827 !important;
+    font-size: 28px;
+}
+
+/*Alert*/
+
+.alert {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: #262626;
+}
+.breve{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* Todas as barracas*/
+.imagem-barraca{
+    height: 150px;
+    width: 150px;
+}
+
+.instrucoes-maps{
+    text-decoration: none;
+    background-color: transparent;
+    color: #2eb30d;
+    text-align: center;
+}
+
+.categorias-cereais{
+    height: 500px;
 }
