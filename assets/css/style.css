@@ -1121,10 +1121,11 @@ input[type="file"] {
     margin-bottom: 50px;
 }
 
-.entreEmContato h3 {
+.entreEmContato h2 {
     color: var(--main);
     margin-bottom: 50px;
     margin-top: 30px;
+    text-align: center;
 }
 
 .formContato {
@@ -1146,6 +1147,7 @@ input[type="file"] {
     border: 1px solid #848383;
     margin-top: 10px;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .inputContato label {
