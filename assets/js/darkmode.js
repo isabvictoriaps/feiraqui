@@ -8,7 +8,8 @@ const getStyle = (html, variavelCSS) =>
 const initialColors = {
     body: getStyle(html, "--body"),
     text: getStyle(html, "--text"),
-    box: getStyle(html, "--box")
+    box: getStyle(html, "--box"),
+    container: getStyle(html, "--container")
 }
 
 // MUDAR CORES AQUI
@@ -16,6 +17,7 @@ const darkMode = {
     body: "#333333",
     text: "#fff",
     box: "none",
+    container: "#202425"
 }
 
 const tranformKey = key => "--" + key.replace(/([A-Z])/).toLowerCase()
@@ -26,14 +28,6 @@ const changeColors = (colors) => {
     )
 }
 
-const changeIcon = () => {
-    if (document.querySelector("#toggle-icon").className == "fa-solid fa-moon") {
-        document.querySelector("#toggle-icon").className = "fa-solid fa-sun"
-    } else document.querySelector("#toggle-icon").className = "fa-solid fa-moon"
-}
-
-let ligado = false
-
-checkbox.addEventListener("change", ({target}) => {
+checkbox.addEventListener("change", ({ target }) => {
     target.checked ? changeColors(darkMode) : changeColors(initialColors)
 })
