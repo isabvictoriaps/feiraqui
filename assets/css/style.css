@@ -1,6 +1,6 @@
 /* importe do google fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 /* GERAIS */
 * {
@@ -9,15 +9,23 @@
     border: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    font-family: 'poppins';
 }
 
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+}
 
 :root {
     --main: #FF8827;
     --body: #fff;
     --text: #333333;
     --box: 10.7168px 10.7168px 21.4335px rgba(182, 182, 182, 0.3);
+    --container: #FFF;
 }
 
 /* BODY */
@@ -28,6 +36,15 @@
     overflow-x: hidden;
 }
 
+.vendas-body,
+.todasBarracas-body,
+.cateVegetais-body,
+.categotias-body,
+.catePeixes-body,
+.catePastel-body,
+.cateFrutas-body,
+.cateEspeciarias-body,
+.cateCereal-body,
 .sobreNos-body,
 .telaFregues-body,
 .telaFeirante-body,
@@ -54,7 +71,6 @@
     padding-top: 20px;
     border-bottom: var(--main) 2px solid;
     max-width: 100%;
-    font-weight: 700;
 }
 
 .nav-item #darkmode-icon {
@@ -109,11 +125,60 @@ i:hover {
     transform: scale(0.8);
 }
 
-.botaoicon,
-#toggle {
+.botaoicon {
     border: none !important;
     background-color: transparent;
 }
+
+#darkButton {
+    margin-top: 5px;
+    background-color: #000;
+    height: 35px;
+    width: 40px;
+    border-radius: 12px;
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.darkmode {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  #switchLabel {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 30px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 100px;
+    position: relative;
+  }
+
+  #switchLabel::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 90px;
+    transition: 0.2s;
+  }
+
+  input:checked + #switchLabel::after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+  }
+
+  #switchLabel:active:after {
+    width: 24px;
+  }
 
 .search-form {
     position: absolute;
@@ -244,8 +309,10 @@ i:hover {
 
 
 .item-categoria {
+    background-color: var(--container);
     margin: 20px;
     text-align: center;
+    border-radius: 12px;
 }
 
 .item-categoria a {
@@ -278,6 +345,7 @@ i:hover {
 }
 
 .item-produto {
+    background-color: var(--container);
     display: flex;
     flex-direction: column;
     box-shadow: var(--box);
@@ -512,6 +580,7 @@ div .input-group-text {
 }
 
 .login_info {
+    background-color: var(--container);
     border: 1px solid #000;
     padding: 30px 20px;
     border-radius: 10px;
@@ -1115,7 +1184,7 @@ input[type="file"] {
     margin-bottom: 50px;
 }
 
-.entreEmContato h2 {
+.entreEmContato h3 {
     color: var(--main);
     margin-bottom: 50px;
     margin-top: 30px;
@@ -1646,7 +1715,7 @@ input[type="file"] {
     padding: 20px 10px;
     text-align: center;
     align-items: center;
-    background-color: var(--body);
+    background-color: var(--container);
     width: 200px;
 }
 
@@ -1679,7 +1748,8 @@ input[type="file"] {
     width: 900px;
     justify-content: center;
     align-items: center;
-    background-color: var(--body);
+    background-color: var(--container);
+    color: var(--text);
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0px;
@@ -1788,6 +1858,7 @@ input[type="file"] {
 }
 
 .categorias-itens {
+    color: var(--text);
     display: flex;
     margin-top: 50px;
     justify-content: center;
@@ -1795,8 +1866,8 @@ input[type="file"] {
 }
 
 .item-categoria-explorar {
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--container);
+    box-shadow: var(--box);
     border-radius: 12px;
     height: 250px;
     width: 200px;
@@ -1812,10 +1883,11 @@ input[type="file"] {
 
 .item-categoria-explorar button{
     background-color: transparent;
+    color: var(--text);
 }
 
 .item-categoria-explorar a{
-    color: #000;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -1842,6 +1914,7 @@ input[type="file"] {
 }
 
 .informacao-entregador {
+    color: var(--text);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -1944,6 +2017,7 @@ input:checked+.slider:before {
 }
 
 .info-p {
+    color: var(--text);
     font-size: 25px;
 }
 
@@ -1961,6 +2035,7 @@ input:checked+.slider:before {
     justify-content: center;
     align-items: center;
     background-color: var(--body);
+    color: var(--text);
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0px;
@@ -1998,6 +2073,7 @@ input:checked+.slider:before {
     justify-content: center;
     align-items: center;
     background-color: var(--body);
+    color: var(--text);
     padding: 20px;
     border-radius: 10px;
     margin: 10px 0px;
